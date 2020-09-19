@@ -12,5 +12,8 @@
     "major": true,
     "minor": true,
     "patch": true
+  },
+  "dependencies": {
+    "@tensorflow/tfjs": "^2.4.0"
   }
 }
