@@ -1,0 +1,74 @@
+{
+  "namespace": "fashion-goods",
+  "parametrised": true,
+  "deployer": "built-in",
+  "globals": {
+    "staticOptions": {
+      "maxAge": 3600000
+    },
+    "lang": "en",
+    "moduleTitles": {},
+    "explicitTopMenu": [],
+    "plugins": {},
+    "jobs": {}
+  },
+  "modules": {
+    "ionadmin": {
+      "globals": null,
+      "import": null,
+      "statics": null
+    },
+    "registry": {
+      "import": null,
+      "globals": {
+        "defaultPath": "",
+        "inlineForm": true,
+        "logo": "",
+        "statics": null,
+        "di": {
+          "itemToExcel": {
+            "module": "modules/registry/export/itemToExcel",
+            "initMethod": "init",
+            "initLevel": 0,
+            "options": {
+              "tplDir": "applications/fashion-goods/export/item",
+              "injectors": []
+            }
+          },
+          "itemToDocx": {
+            "module": "modules/registry/export/itemToDocx",
+            "initMethod": "init",
+            "initLevel": 0,
+            "options": {
+              "tplDir": "applications/fashion-goods/export/item",
+              "injectors": []
+            }
+          },
+          "listToDocx": {
+            "module": "modules/registry/export/listToDocx",
+            "initMethod": "init",
+            "initLevel": 0,
+            "options": {
+              "tplDir": "applications/fashion-goods/export/list",
+              "log": "ion://sysLog"
+            }
+          },
+          "listToExcel": {
+            "module": "modules/registry/export/listToExcel",
+            "initMethod": "init",
+            "initLevel": 0,
+            "options": {
+              "tplDir": "applications/fashion-goods/export/list",
+              "log": "ion://sysLog"
+            }
+          },
+          "export": {
+            "options": {
+              "configs": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}

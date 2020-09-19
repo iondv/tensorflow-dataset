@@ -1,0 +1,120 @@
+{
+  "classes": {
+    "type": {
+      "uml": {
+        "offset": {
+          "top": 23,
+          "left": 189
+        }
+      }
+    }
+  },
+  "workflows": {},
+  "interfaces": [],
+  "changeLogs": [
+    {
+      "action": "create",
+      "type": "class",
+      "name": "goods",
+      "date": "2020-09-19T06:52:29.082Z"
+    },
+    {
+      "action": "create",
+      "type": "class attribute",
+      "name": "guid.goods",
+      "date": "2020-09-19T06:52:29.113Z"
+    },
+    {
+      "action": "create",
+      "type": "class attribute",
+      "name": "name.goods",
+      "date": "2020-09-19T06:53:05.798Z"
+    },
+    {
+      "action": "create",
+      "type": "class attribute",
+      "name": "type.goods",
+      "date": "2020-09-19T06:54:07.899Z"
+    },
+    {
+      "action": "create",
+      "type": "class attribute",
+      "name": "image.goods",
+      "date": "2020-09-19T06:54:21.694Z"
+    },
+    {
+      "action": "create",
+      "type": "class attribute",
+      "name": "isVerified.goods",
+      "date": "2020-09-19T06:55:28.128Z"
+    },
+    {
+      "action": "create",
+      "type": "class",
+      "name": "type",
+      "date": "2020-09-19T06:55:51.130Z"
+    },
+    {
+      "action": "create",
+      "type": "class attribute",
+      "name": "guid.type",
+      "date": "2020-09-19T06:55:51.167Z"
+    },
+    {
+      "action": "create",
+      "type": "class attribute",
+      "name": "name.type",
+      "date": "2020-09-19T06:56:13.294Z"
+    },
+    {
+      "action": "update",
+      "type": "class attribute",
+      "name": "type.goods",
+      "oldValue": {
+        "type": 0,
+        "refClass": ""
+      },
+      "newValue": {
+        "type": 13,
+        "refClass": "type"
+      },
+      "date": "2020-09-19T06:56:33.736Z"
+    },
+    {
+      "action": "update",
+      "type": "class attribute",
+      "name": "code.type",
+      "oldValue": {
+        "name": "guid",
+        "type": 12,
+        "size": 24,
+        "readonly": true,
+        "autoassigned": true,
+        "nullable": true
+      },
+      "newValue": {
+        "name": "code",
+        "type": 0,
+        "size": 8,
+        "readonly": false,
+        "autoassigned": false,
+        "nullable": false
+      },
+      "date": "2020-09-19T06:58:24.669Z"
+    },
+    {
+      "action": "update",
+      "type": "class attribute",
+      "name": "code.type",
+      "oldValue": {
+        "caption": "ID",
+        "type": null
+      },
+      "newValue": {
+        "caption": "Code",
+        "type": null
+      },
+      "date": "2020-09-19T06:58:45.252Z"
+    }
+  ]
+}
