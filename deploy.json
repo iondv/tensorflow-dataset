@@ -66,6 +66,26 @@
             "options": {
               "configs": {}
             }
+          },
+          "processWithTensorflow": {
+            "module": "applications/fashion-goods/lib/util/processWithTensorflow",
+            "initMethod": "init",
+            "initLevel": 2,
+            "options": {
+              "data": "ion://dataRepo",
+              "workflows": "ion://workflows",
+              "log": "ion://sysLog"
+            }
+          },
+          "actions": {
+            "options": {
+              "actions": [
+                {
+                  "code": "RUN_TENSORFLOW",
+                  "handler": "ion://processWithTensorflow"
+                }
+              ]
+            }
           }
         }
       }

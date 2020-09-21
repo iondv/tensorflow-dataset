@@ -245,6 +245,16 @@
       "signBefore": false,
       "signAfter": false,
       "isBulk": false
+    },
+    {
+      "id": "RUN_TENSORFLOW",
+      "caption": "Process in Tensorflow",
+      "visibilityCondition": null,
+      "enableCondition": null,
+      "needSelectedItem": false,
+      "signBefore": false,
+      "signAfter": false,
+      "isBulk": false
     }
   ]
 }
