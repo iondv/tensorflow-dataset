@@ -15,7 +15,15 @@ Demo AIB and tensorflow
 
 ## English description
 
-TODO 
+Demo application based on [IONDV. Framework](https://iondv.com) that implements automatic classification of uploaded products using TensorFlow. Based on the operator's recognition verification, the model can be retrained by forming a marked-up dataset and a new model.
+
+Application logic:
+* a product object is created, a name is entered, and an image is uploaded
+* when saving an object, the system automatically recognizes the image type primarily based on the Fashion-MNIST dataset https://github.com/zalandoresearch/fashion-mnist
+* product object can be re-recognized at any time
+* the correct recognition can be verified by the operator or changed. Verified products are then used to create a marked-up dataset for recognizing new products
+* TensorFlow model can be retrained based on verified product classifiers
+* all products can be re-recognized based on the retrained model 
 
 
  --------------------------------------------------------------------------  
