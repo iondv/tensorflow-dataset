@@ -247,8 +247,8 @@
       "isBulk": false
     },
     {
-      "id": "RUN_TENSORFLOW",
-      "caption": "Process in Tensorflow",
+      "id": "PROCESS_WITH_TENSORFLOW",
+      "caption": "Process with Tensorflow",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,

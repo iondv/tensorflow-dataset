@@ -24,7 +24,6 @@
         "defaultPath": "",
         "inlineForm": true,
         "logo": "",
-        "statics": null,
         "di": {
           "itemToExcel": {
             "module": "modules/registry/export/itemToExcel",
@@ -77,12 +76,40 @@
               "log": "ion://sysLog"
             }
           },
+          "recalculateProcessingModel": {
+            "module": "applications/fashion-goods/lib/util/recalculateProcessingModel",
+            "initMethod": null,
+            "initLevel": 0,
+            "options": {
+              "data": "ion://dataRepo",
+              "workflows": "ion://workflows",
+              "log": "ion://sysLog"
+            }
+          },
+          "reclassifyItem": {
+            "module": "applications/fashion-goods/lib/util/reclassifyItem",
+            "initMethod": "init",
+            "initLevel": 2,
+            "options": {
+              "data": "ion://dataRepo",
+              "workflows": "ion://workflows",
+              "log": "ion://sysLog"
+            }
+          },
           "actions": {
             "options": {
               "actions": [
                 {
-                  "code": "RUN_TENSORFLOW",
+                  "code": "PROCESS_WITH_TENSORFLOW",
                   "handler": "ion://processWithTensorflow"
+                },
+                {
+                  "code": "RECALCULATE_PROCESSING_MODEL",
+                  "handler": "ion://recalculateProcessingModel"
+                },
+                {
+                  "code": "RECLASSIFY_ITEM",
+                  "handler": "ion://reclassifyItem"
                 }
               ]
             }
