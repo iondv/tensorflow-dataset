@@ -5,7 +5,8 @@
   "version": "0.0.1",
   "ionModulesDependencies": {
     "ionadmin": "*",
-    "registry": "*"
+    "registry": "*",
+	"aib": "*"
   },
   "ionMetaDependencies": {},
   "changeState": {

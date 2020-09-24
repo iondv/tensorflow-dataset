@@ -13,6 +13,17 @@
     "jobs": {}
   },
   "modules": {
+    "aib": {
+      "globals": {
+        "tensorflow": {
+          "numOfClassesToTrain": 5,
+		  "epochs": 5,
+		  "patternBatchSize": 100
+        }
+      },
+      "import": null,
+      "statics": null
+    },
     "ionadmin": {
       "globals": null,
       "import": null,
@@ -24,6 +35,7 @@
         "defaultPath": "",
         "inlineForm": true,
         "logo": "",
+        "statics": null,
         "di": {
           "itemToExcel": {
             "module": "modules/registry/export/itemToExcel",
@@ -76,16 +88,6 @@
               "log": "ion://sysLog"
             }
           },
-          "recalculateProcessingModel": {
-            "module": "applications/fashion-goods/lib/util/recalculateProcessingModel",
-            "initMethod": null,
-            "initLevel": 0,
-            "options": {
-              "data": "ion://dataRepo",
-              "workflows": "ion://workflows",
-              "log": "ion://sysLog"
-            }
-          },
           "reclassifyItem": {
             "module": "applications/fashion-goods/lib/util/reclassifyItem",
             "initMethod": "init",
@@ -102,10 +104,6 @@
                 {
                   "code": "PROCESS_WITH_TENSORFLOW",
                   "handler": "ion://processWithTensorflow"
-                },
-                {
-                  "code": "RECALCULATE_PROCESSING_MODEL",
-                  "handler": "ion://recalculateProcessingModel"
                 },
                 {
                   "code": "RECLASSIFY_ITEM",
