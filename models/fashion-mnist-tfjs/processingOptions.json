@@ -1,0 +1,17 @@
+{
+  "labels": [
+    "T-shirt/top",
+    "Trouser",
+    "Pullover",
+    "Dress",
+    "Coat",
+    "Sandal",
+    "Shirt",
+    "Sneaker",
+    "Bag",
+    "Ankle boot"
+  ],
+  "imageWidth": 28,
+  "imageHeight": 28,
+  "imageChannels": 1
+}

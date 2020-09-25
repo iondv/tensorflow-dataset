@@ -5,7 +5,8 @@
   "version": "0.0.1",
   "ionModulesDependencies": {
     "ionadmin": "*",
-    "registry": "*"
+    "registry": "*",
+    "aib": "*"
   },
   "ionMetaDependencies": {},
   "changeState": {
@@ -14,6 +15,7 @@
     "patch": true
   },
   "dependencies": {
-    "@tensorflow/tfjs": "^2.4.0"
+    "@tensorflow/tfjs-node": "^2.4.0",
+    "canvas-prebuilt": "^2.0.0-alpha.14"
   }
 }

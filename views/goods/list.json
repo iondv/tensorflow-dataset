@@ -92,6 +92,16 @@
           "signBefore": false,
           "signAfter": false,
           "isBulk": false
+        },
+        {
+          "id": "RECLASSIFY_ITEM",
+          "caption": "Reclassify",
+          "visibilityCondition": null,
+          "enableCondition": null,
+          "needSelectedItem": false,
+          "signBefore": false,
+          "signAfter": false,
+          "isBulk": false
         }
       ],
       "required": false,

@@ -13,6 +13,17 @@
     "jobs": {}
   },
   "modules": {
+    "aib": {
+      "globals": {
+        "tensorflow": {
+          "imageWidth": 28,
+          "imageHeight": 28,
+          "imageChannels": 1
+        }
+      },
+      "import": null,
+      "statics": null
+    },
     "ionadmin": {
       "globals": null,
       "import": null,
@@ -65,6 +76,40 @@
           "export": {
             "options": {
               "configs": {}
+            }
+          },
+          "processWithTensorflow": {
+            "module": "applications/fashion-goods/lib/util/processWithTensorflow",
+            "initMethod": "init",
+            "initLevel": 2,
+            "options": {
+              "data": "ion://dataRepo",
+              "workflows": "ion://workflows",
+              "log": "ion://sysLog"
+            }
+          },
+          "reclassifyItem": {
+            "module": "applications/fashion-goods/lib/util/reclassifyItem",
+            "initMethod": "init",
+            "initLevel": 2,
+            "options": {
+              "data": "ion://dataRepo",
+              "workflows": "ion://workflows",
+              "log": "ion://sysLog"
+            }
+          },
+          "actions": {
+            "options": {
+              "actions": [
+                {
+                  "code": "PROCESS_WITH_TENSORFLOW",
+                  "handler": "ion://processWithTensorflow"
+                },
+                {
+                  "code": "RECLASSIFY_ITEM",
+                  "handler": "ion://reclassifyItem"
+                }
+              ]
             }
           }
         }
