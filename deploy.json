@@ -16,9 +16,9 @@
     "aib": {
       "globals": {
         "tensorflow": {
-          "numOfClassesToTrain": 5,
-		  "epochs": 5,
-		  "patternBatchSize": 100
+          "imageWidth": 28,
+          "imageHeight": 28,
+          "imageChannels": 1
         }
       },
       "import": null,

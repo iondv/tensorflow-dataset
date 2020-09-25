@@ -27,7 +27,7 @@ const imageHeight = 28;
 const imageChannels = 1;
 
 const batchSize = 100;
-const epochsValue = 5;
+const epochsValue = 15;
 
 // load and normalize data
 const loadData = function (dataUrl, batches=batchSize) {

@@ -6,7 +6,7 @@
   "ionModulesDependencies": {
     "ionadmin": "*",
     "registry": "*",
-	"aib": "*"
+    "aib": "*"
   },
   "ionMetaDependencies": {},
   "changeState": {
@@ -15,6 +15,7 @@
     "patch": true
   },
   "dependencies": {
-    "@tensorflow/tfjs-node": "^2.4.0"
+    "@tensorflow/tfjs-node": "^2.4.0",
+    "canvas": "^2.6.1"
   }
 }
