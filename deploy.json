@@ -125,41 +125,14 @@
               "auth": "ion://auth",
               "config": {
                 "*": {
-                  "conv2d@tensorflow-dataset": {
+                  "models@tensorflow-dataset": {
                     "roots":[{ 
                       "property": "sequential",
                       "operation": 1,
                       "value": [null],
                       "nestedConditions": []
                     }],
-                    "childs":["layers"]
-                  },
-                  "dense@tensorflow-dataset":{
-                      "roots":[{ 
-                        "property": "sequential",
-                        "operation": 1,
-                        "value": [null],
-                        "nestedConditions": []
-                      }],
-                      "childs":["layers"]
-                  },
-                  "flatten@tensorflow-dataset":{
-                    "roots":[{ 
-                      "property": "sequential",
-                      "operation": 1,
-                      "value": [null],
-                      "nestedConditions": []
-                    }],
-                    "childs":["layers"]
-                  },
-                  "maxPooling2d@tensorflow-dataset":{
-                    "roots":[{ 
-                      "property": "sequential",
-                      "operation": 1,
-                      "value": [null],
-                      "nestedConditions": []
-                    }],
-                    "childs":["layers"]
+                    "childs":["childs"]
                   }
                 }
               }
