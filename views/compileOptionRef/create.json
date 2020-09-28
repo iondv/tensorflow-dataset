@@ -35,7 +35,7 @@
               "isBulk": false
             },
             {
-              "id": "ADD",
+              "id": "SELECT",
               "caption": "Add",
               "visibilityCondition": null,
               "enableCondition": null,
@@ -87,7 +87,7 @@
               "isBulk": false
             },
             {
-              "id": "ADD",
+              "id": "SELECT",
               "caption": "Add",
               "visibilityCondition": null,
               "enableCondition": null,
@@ -139,7 +139,7 @@
               "isBulk": false
             },
             {
-              "id": "ADD",
+              "id": "SELECT",
               "caption": "Add",
               "visibilityCondition": null,
               "enableCondition": null,

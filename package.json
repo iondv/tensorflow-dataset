@@ -16,6 +16,6 @@
   },
   "dependencies": {
     "@tensorflow/tfjs-node": "^2.4.0",
-    "canvas-prebuilt": "^2.0.0-alpha.14"
+    "canvas": "^2.6.1"
   }
 }
