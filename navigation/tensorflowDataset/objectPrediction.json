@@ -1,0 +1,15 @@
+{
+  "code": "objectPrediction",
+  "caption": "Object prediction",
+  "type": 1,
+  "orderNumber": 30,
+  "title": "",
+  "hint": "",
+  "classname": "objectPrediction",
+  "container": "",
+  "collection": "",
+  "url": "",
+  "conditions": [],
+  "sorting": [],
+  "pathChains": []
+}

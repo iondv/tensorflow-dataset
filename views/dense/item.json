@@ -4,8 +4,8 @@
       "caption": "",
       "fullFields": [
         {
-          "property": "name",
-          "caption": "Name",
+          "property": "units",
+          "caption": "units",
           "type": 1,
           "orderNumber": 20,
           "hint": "",
@@ -25,10 +25,31 @@
           "tags": ""
         },
         {
-          "property": "code",
-          "caption": "Code",
+          "property": "sequential",
+          "caption": "Sequential",
           "type": 1,
           "orderNumber": 10,
+          "hint": "",
+          "size": null,
+          "maskName": "",
+          "mask": "",
+          "mode": 0,
+          "commands": null,
+          "required": false,
+          "readonly": false,
+          "sorted": false,
+          "selectionPaginated": false,
+          "visibility": "",
+          "enablement": "",
+          "obligation": "",
+          "historyDisplayMode": 0,
+          "tags": ""
+        },
+        {
+          "property": "activation",
+          "caption": "activation",
+          "type": 1,
+          "orderNumber": 30,
           "hint": "",
           "size": null,
           "maskName": "",
@@ -52,7 +73,7 @@
   "commands": [
     {
       "id": "SAVE",
-      "caption": "Create",
+      "caption": "Save",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,
@@ -62,7 +83,17 @@
     },
     {
       "id": "SAVEANDCLOSE",
-      "caption": "Create and close",
+      "caption": "Save and close",
+      "visibilityCondition": null,
+      "enableCondition": null,
+      "needSelectedItem": false,
+      "signBefore": false,
+      "signAfter": false,
+      "isBulk": false
+    },
+    {
+      "id": "DELETE",
+      "caption": "Delete",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,

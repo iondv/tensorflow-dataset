@@ -1,7 +1,7 @@
 {
   "code": "fashion-mnist3",
   "name": "Dress",
-  "_class": "type@fashion-goods",
+  "_class": "type@tensorflow-dataset",
   "_classVer": "",
   "_creator": "demo@local",
   "___workflowStatus": {}

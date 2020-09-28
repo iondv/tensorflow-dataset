@@ -1,0 +1,17 @@
+{
+  "name": "flatten",
+  "caption": "flatten",
+  "key": [
+    "guid"
+  ],
+  "semantic": "",
+  "version": "",
+  "ancestor": "baseLayers",
+  "container": "",
+  "creationTracker": "",
+  "changeTracker": "",
+  "compositeIndexes": null,
+  "journaling": false,
+  "isStruct": false,
+  "properties": []
+}

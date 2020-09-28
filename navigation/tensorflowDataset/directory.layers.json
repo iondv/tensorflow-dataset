@@ -1,0 +1,15 @@
+{
+  "code": "directory.layers",
+  "caption": "Layers",
+  "type": 1,
+  "orderNumber": 30,
+  "title": "",
+  "hint": "",
+  "classname": "baseLayers",
+  "container": "",
+  "collection": "",
+  "url": "",
+  "conditions": [],
+  "sorting": [],
+  "pathChains": []
+}

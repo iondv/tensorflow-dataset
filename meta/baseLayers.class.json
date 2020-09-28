@@ -1,10 +1,10 @@
 {
-  "name": "type",
-  "caption": "Type of object",
+  "name": "baseLayers",
+  "caption": "Layers",
   "key": [
-    "code"
+    "guid"
   ],
-  "semantic": "name",
+  "semantic": "sequential",
   "version": "",
   "ancestor": "",
   "container": "",
@@ -15,14 +15,14 @@
   "isStruct": false,
   "properties": [
     {
-      "name": "code",
-      "caption": "Code",
-      "type": 0,
-      "size": 8,
-      "readonly": false,
+      "name": "guid",
+      "caption": "ID",
+      "type": 12,
+      "size": 24,
+      "readonly": true,
       "indexed": true,
       "unique": true,
-      "autoassigned": false,
+      "autoassigned": true,
       "orderNumber": 10,
       "mode": 0,
       "decimals": 0,
@@ -41,12 +41,12 @@
       "selectionProvider": null,
       "formula": null,
       "eagerLoading": false,
-      "nullable": false,
+      "nullable": true,
       "indexSearch": false
     },
     {
-      "name": "name",
-      "caption": "Name",
+      "name": "sequential",
+      "caption": "Sequential",
       "type": 0,
       "orderNumber": 20,
       "mode": 0,

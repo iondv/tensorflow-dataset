@@ -1,27 +1,6 @@
 {
   "columns": [
     {
-      "property": "code",
-      "caption": "Code",
-      "type": 1,
-      "orderNumber": 10,
-      "hint": "",
-      "size": null,
-      "maskName": "",
-      "mask": "",
-      "mode": 0,
-      "commands": null,
-      "required": false,
-      "readonly": true,
-      "sorted": true,
-      "selectionPaginated": false,
-      "visibility": "",
-      "enablement": "",
-      "obligation": "",
-      "historyDisplayMode": 0,
-      "tags": ""
-    },
-    {
       "property": "name",
       "caption": "Name",
       "type": 1,
@@ -60,16 +39,6 @@
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": true,
-      "signBefore": false,
-      "signAfter": false,
-      "isBulk": false
-    },
-    {
-      "id": "RECALCULATE_PROCESSING_MODEL",
-      "caption": "Recalculate the processing model",
-      "visibilityCondition": null,
-      "enableCondition": null,
-      "needSelectedItem": false,
       "signBefore": false,
       "signAfter": false,
       "isBulk": false

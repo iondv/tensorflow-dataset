@@ -1,4 +1,4 @@
-# fashion-goods
+# tensorflow-dataset
 Demo AIB and tensorflow
 
 ## Russian description
