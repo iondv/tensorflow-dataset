@@ -7,6 +7,8 @@ This page in [English](./README.md)
 
 В приложение реализован пример импорта данных датасета [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist)
 
+<img src="/data_model.png">
+
 ### Кратко IONDV. Framework
 
 **IONDV. Framework** - это опенсорсное приложение на node.js реализующее функциональность цифровой инструментальной платформы 
