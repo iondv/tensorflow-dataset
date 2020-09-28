@@ -279,6 +279,16 @@
       "isBulk": false
     },
     {
+      "id": "PROCESS_WITH_TENSORFLOW",
+      "caption": "Process with Tensorflow",
+      "visibilityCondition": null,
+      "enableCondition": null,
+      "needSelectedItem": false,
+      "signBefore": false,
+      "signAfter": false,
+      "isBulk": false
+    },
+    {
       "id": "DELETE",
       "caption": "Delete",
       "visibilityCondition": null,
