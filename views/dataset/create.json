@@ -51,7 +51,7 @@
           "type": 11,
           "orderNumber": 30,
           "hint": "",
-          "size": null,
+          "size": 2,
           "maskName": "",
           "mask": "",
           "mode": 0,
@@ -64,7 +64,10 @@
           "enablement": "",
           "obligation": "",
           "historyDisplayMode": 0,
-          "tags": ""
+          "tags": "",
+          "options": {
+            "maxSize": 52428800
+          }  
         },
         {
           "property": "testingSource",
@@ -85,7 +88,10 @@
           "enablement": "",
           "obligation": "",
           "historyDisplayMode": 0,
-          "tags": ""
+          "tags": "",
+          "options": {
+            "maxSize": 52428800
+          }  
         },
         {
           "property": "typeLabels",
