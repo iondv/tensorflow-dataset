@@ -25,8 +25,8 @@
           "tags": ""
         },
         {
-          "property": "compileOptions",
-          "caption": "is JSON for compile options",
+          "property": "compilationOptions",
+          "caption": "use JSON for compilation options",
           "type": 4,
           "orderNumber": 30,
           "hint": "",
@@ -46,8 +46,8 @@
           "tags": ""
         },
         {
-          "property": "compileOptionsJson",
-          "caption": "Compile options",
+          "property": "compilationOptionsJson",
+          "caption": "Compilation options",
           "type": 7,
           "orderNumber": 40,
           "hint": "",
@@ -67,8 +67,8 @@
           "tags": ""
         },
         {
-          "property": "compileOptionsRef",
-          "caption": "Compile option",
+          "property": "compilationOptionsRef",
+          "caption": "Compilation option",
           "type": 2,
           "orderNumber": 50,
           "hint": "",

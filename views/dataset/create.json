@@ -4,8 +4,29 @@
       "caption": "",
       "fullFields": [
         {
-          "property": "type",
-          "caption": "Type",
+          "property": "name",
+          "caption": "Name",
+          "type": 1,
+          "orderNumber": 10,
+          "hint": "",
+          "size": null,
+          "maskName": "",
+          "mask": "",
+          "mode": 0,
+          "commands": null,
+          "required": false,
+          "readonly": false,
+          "sorted": false,
+          "selectionPaginated": false,
+          "visibility": "",
+          "enablement": "",
+          "obligation": "",
+          "historyDisplayMode": 0,
+          "tags": ""
+        },
+        {
+          "property": "sourceType",
+          "caption": "Type of source",
           "type": 1,
           "orderNumber": 20,
           "hint": "",
@@ -25,9 +46,9 @@
           "tags": ""
         },
         {
-          "property": "compilationOptions",
-          "caption": "use JSON for compilation options",
-          "type": 4,
+          "property": "trainingSource",
+          "caption": "Training source",
+          "type": 11,
           "orderNumber": 30,
           "hint": "",
           "size": null,
@@ -46,9 +67,9 @@
           "tags": ""
         },
         {
-          "property": "compilationOptionsJson",
-          "caption": "Compilation options",
-          "type": 7,
+          "property": "testingSource",
+          "caption": "Testing source",
+          "type": 11,
           "orderNumber": 40,
           "hint": "",
           "size": null,
@@ -67,9 +88,9 @@
           "tags": ""
         },
         {
-          "property": "compilationOptionsRef",
-          "caption": "Compilation option",
-          "type": 2,
+          "property": "typeLabels",
+          "caption": "Type labels",
+          "type": 3,
           "orderNumber": 50,
           "hint": "",
           "size": null,
@@ -117,95 +138,6 @@
           "obligation": "",
           "historyDisplayMode": 0,
           "tags": ""
-        },
-        {
-          "property": "layers",
-          "caption": "Layers",
-          "type": 3,
-          "orderNumber": 60,
-          "hint": "",
-          "size": null,
-          "maskName": "",
-          "mask": "",
-          "mode": 0,
-          "columns": [
-            {
-              "sorted": true,
-              "property": "sequential",
-              "caption": "Sequential",
-              "type": 1,
-              "orderNumber": 20,
-              "hint": "",
-              "size": null,
-              "maskName": "",
-              "mask": "",
-              "mode": 0,
-              "commands": null,
-              "required": false,
-              "readonly": false,
-              "selectionPaginated": false,
-              "visibility": "",
-              "enablement": "",
-              "obligation": "",
-              "historyDisplayMode": 0,
-              "tags": ""
-            }
-          ],
-          "commands": [
-            {
-              "id": "CREATE",
-              "caption": "Create",
-              "visibilityCondition": null,
-              "enableCondition": null,
-              "needSelectedItem": false,
-              "signBefore": false,
-              "signAfter": false,
-              "isBulk": false
-            },
-            {
-              "id": "EDIT",
-              "caption": "Edit",
-              "visibilityCondition": null,
-              "enableCondition": null,
-              "needSelectedItem": true,
-              "signBefore": false,
-              "signAfter": false,
-              "isBulk": false
-            },
-            {
-              "id": "SELECT",
-              "caption": "Add",
-              "visibilityCondition": null,
-              "enableCondition": null,
-              "needSelectedItem": false,
-              "signBefore": false,
-              "signAfter": false,
-              "isBulk": false
-            }
-          ],
-          "required": false,
-          "readonly": false,
-          "sorted": false,
-          "selectionPaginated": false,
-          "visibility": "",
-          "enablement": "",
-          "obligation": "",
-          "historyDisplayMode": 0,
-          "tags": "",
-          "options": {
-            "template": "treegrid/collection",
-            "reorderable": true,
-            "dragable" : true,
-            "treegrid": {
-              "width": "auto,100,100,100,100,0",
-              "align": "left, center,center,center,center, left",
-              "sort": "str, date, date, date, date, int",
-              "enableAutoWidth": false,
-              "paging": {
-                "size": 20
-              }
-            }
-          }
         }
       ],
       "shortFields": []
@@ -214,7 +146,7 @@
   "commands": [
     {
       "id": "SAVE",
-      "caption": "Save",
+      "caption": "Create",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,
@@ -224,17 +156,7 @@
     },
     {
       "id": "SAVEANDCLOSE",
-      "caption": "Save and close",
-      "visibilityCondition": null,
-      "enableCondition": null,
-      "needSelectedItem": false,
-      "signBefore": false,
-      "signAfter": false,
-      "isBulk": false
-    },
-    {
-      "id": "DELETE",
-      "caption": "Delete",
+      "caption": "Create and close",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,

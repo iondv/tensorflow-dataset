@@ -86,8 +86,8 @@
       "indexSearch": false
     },
     {
-      "name": "compileOptions",
-      "caption": "is JSON for compile options?",
+      "name": "compilationOptions",
+      "caption": "use JSON for compilation options",
       "type": 10,
       "orderNumber": 30,
       "mode": 0,
@@ -116,8 +116,8 @@
       "indexSearch": false
     },
     {
-      "name": "compileOptionsJson",
-      "caption": "Compile options",
+      "name": "compilationOptionsJson",
+      "caption": "Compilation options",
       "type": 1,
       "orderNumber": 40,
       "mode": 0,
@@ -146,8 +146,8 @@
       "indexSearch": false
     },
     {
-      "name": "compileOptionsRef",
-      "caption": "Compile option",
+      "name": "compilationOptionsRef",
+      "caption": "Compilation option",
       "type": 13,
       "orderNumber": 50,
       "mode": 0,
@@ -157,7 +157,7 @@
       "maxFileCount": 0,
       "hint": "",
       "semantic": "",
-      "refClass": "compileOptionRef",
+      "refClass": "compilationOptionRef",
       "itemsClass": "",
       "backRef": "",
       "backColl": "",

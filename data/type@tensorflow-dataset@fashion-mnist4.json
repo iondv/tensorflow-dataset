@@ -1,8 +1,7 @@
 {
   "code": "fashion-mnist4",
-  "name": "Coat",
   "_class": "type@tensorflow-dataset",
   "_classVer": "",
-  "_creator": "demo@local",
+  "name": "Coat",
   "___workflowStatus": {}
 }

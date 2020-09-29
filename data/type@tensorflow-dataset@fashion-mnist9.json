@@ -1,7 +1,8 @@
 {
-  "code": "fashion-mnist0",
+  "code": "fashion-mnist9",
+  "name": "Ankle boot",
   "_class": "type@tensorflow-dataset",
   "_classVer": "",
-  "name": "T-shirt/top",
+  "_creator": "demo@local",
   "___workflowStatus": {}
 }

@@ -1,0 +1,9 @@
+{
+  "label": "7",
+  "type": "fashion-mnist7",
+  "guid": "22a709c0-0200-11eb-89dd-f57ce99c1830",
+  "_class": "typeLabel@tensorflow-dataset",
+  "_classVer": "",
+  "_creator": "demo@local",
+  "___workflowStatus": {}
+}

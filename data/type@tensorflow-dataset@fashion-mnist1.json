@@ -1,8 +1,7 @@
 {
   "code": "fashion-mnist1",
-  "name": "Trouser",
   "_class": "type@tensorflow-dataset",
   "_classVer": "",
-  "_creator": "demo@local",
+  "name": "Trouser",
   "___workflowStatus": {}
 }

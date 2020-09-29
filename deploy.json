@@ -12,7 +12,7 @@
     "plugins": {},
     "jobs": {}
   },
-  
+
   "modules": {
     "aib": {
       "globals": {
@@ -89,8 +89,8 @@
               "log": "ion://sysLog"
             }
           },
-          "reclassifyItem": {
-            "module": "applications/tensorflow-dataset/lib/util/reclassifyItem",
+          "importFromDataset": {
+            "module": "applications/tensorflow-dataset/lib/util/importFromDataset",
             "initMethod": "init",
             "initLevel": 2,
             "options": {
@@ -107,8 +107,8 @@
                   "handler": "ion://processWithTensorflow"
                 },
                 {
-                  "code": "RECLASSIFY_ITEM",
-                  "handler": "ion://reclassifyItem"
+                  "code": "IMPORT_FROM_DATASET",
+                  "handler": "ion://importFromDataset"
                 }
               ]
             }
@@ -126,7 +126,7 @@
               "config": {
                 "*": {
                   "models@tensorflow-dataset": {
-                    "roots":[{ 
+                    "roots":[{
                       "property": "sequential",
                       "operation": 1,
                       "value": [null],

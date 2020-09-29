@@ -1,6 +1,6 @@
 {
-  "name": "compileOptionRef",
-  "caption": "Compile options",
+  "name": "compilationOptionRef",
+  "caption": "Compilation options",
   "key": [
     "guid"
   ],
