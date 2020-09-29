@@ -4,7 +4,7 @@
   "key": [
     "guid"
   ],
-  "semantic": "name|sequential",
+  "semantic": "name| |sequential",
   "version": "",
   "ancestor": "",
   "container": "",
