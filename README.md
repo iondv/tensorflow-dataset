@@ -1,11 +1,18 @@
+Эта страница на [Русском](./README_RU.md)
+
 # IONDV. Tensorflow dataset app 
 **IONDV. Tensorflow dataset app** - is an application based on the [IONDV. Framework](https://iondv.com) ([code repository](https://github.com/iondv/framework)) to accumulate data, normalize and mark up images, create, train and compare [Tensor Flow](https://www.tensorflow.org/) models without programming for standard functionality. It’s also possible to fully customize the logic in the form of model modifications and dataset processing using the Node.js code development.
+
 
 See the example of data import of dataset in the [Fashion-MNIST](https://github.com/zalandoresearch/fashion-mnist) application
 
 ### IONDV. Framework in brief
 
-**IONDV. Framework** is a node.js open source application that implements the functionality of a digital tool platform for rapid development of web applications and micro-services based on metadata and can be extended with modules. The main purpose of the complex of solutions is to speed up the development of accounting web applications (ERP) using low-code technology. This platform consists of the following open-source components: the [IONDV. Framework](https://github.com/iondv/framework), the [modules](https://github.com/topics/iondv-module) and the ready-made applications expanding its functionality, as well as the [Studio](https://studio.iondv.com) ([repository](https://github.com/iondv/studio)) open source visual development environment to create metadata of an application. The UML-scheme modeled applications can be launched [in 80 seconds](https://youtu.be/s7q9_YXkeEo).
+**IONDV. Framework** is a node.js open source application that implements the functionality of a digital tool platform for rapid development of web applications and micro-services based on metadata and can be extended with modules. 
+The main purpose of the complex of solutions is to speed up the development of accounting web applications (ERP) using low-code technology. 
+This platform consists of the following open-source components: the [IONDV. Framework](https://github.com/iondv/framework), 
+the [modules](https://github.com/topics/iondv-module) and the ready-made applications expanding its functionality, as well as the [Studio](https://studio.iondv.com) ([repository](https://github.com/iondv/studio)) 
+open source visual development environment to create metadata of an application. The UML-scheme modeled applications can be launched [in 80 seconds](https://youtu.be/s7q9_YXkeEo).
 
 * For more details, see [IONDV. Framework site](https://iondv.com). 
 

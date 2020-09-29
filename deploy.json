@@ -1,5 +1,5 @@
 {
-  "namespace": "fashion-goods",
+  "namespace": "tensorflow-dataset",
   "parametrised": true,
   "deployer": "built-in",
   "globals": {
@@ -12,6 +12,7 @@
     "plugins": {},
     "jobs": {}
   },
+
   "modules": {
     "aib": {
       "globals": {
@@ -42,7 +43,7 @@
             "initMethod": "init",
             "initLevel": 0,
             "options": {
-              "tplDir": "applications/fashion-goods/export/item",
+              "tplDir": "applications/tensorflow-dataset/export/item",
               "injectors": []
             }
           },
@@ -51,7 +52,7 @@
             "initMethod": "init",
             "initLevel": 0,
             "options": {
-              "tplDir": "applications/fashion-goods/export/item",
+              "tplDir": "applications/tensorflow-dataset/export/item",
               "injectors": []
             }
           },
@@ -60,7 +61,7 @@
             "initMethod": "init",
             "initLevel": 0,
             "options": {
-              "tplDir": "applications/fashion-goods/export/list",
+              "tplDir": "applications/tensorflow-dataset/export/list",
               "log": "ion://sysLog"
             }
           },
@@ -69,7 +70,7 @@
             "initMethod": "init",
             "initLevel": 0,
             "options": {
-              "tplDir": "applications/fashion-goods/export/list",
+              "tplDir": "applications/tensorflow-dataset/export/list",
               "log": "ion://sysLog"
             }
           },
@@ -79,7 +80,7 @@
             }
           },
           "processWithTensorflow": {
-            "module": "applications/fashion-goods/lib/util/processWithTensorflow",
+            "module": "applications/tensorflow-dataset/lib/util/processWithTensorflow",
             "initMethod": "init",
             "initLevel": 2,
             "options": {
@@ -88,8 +89,8 @@
               "log": "ion://sysLog"
             }
           },
-          "reclassifyItem": {
-            "module": "applications/fashion-goods/lib/util/reclassifyItem",
+          "importFromDataset": {
+            "module": "applications/tensorflow-dataset/lib/util/importFromDataset",
             "initMethod": "init",
             "initLevel": 2,
             "options": {
@@ -106,8 +107,8 @@
                   "handler": "ion://processWithTensorflow"
                 },
                 {
-                  "code": "RECLASSIFY_ITEM",
-                  "handler": "ion://reclassifyItem"
+                  "code": "IMPORT_FROM_DATASET",
+                  "handler": "ion://importFromDataset"
                 }
               ]
             }

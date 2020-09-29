@@ -1,0 +1,15 @@
+{
+  "code": "learningResult",
+  "caption": "Learning result",
+  "type": 1,
+  "orderNumber": 20,
+  "title": "",
+  "hint": "",
+  "classname": "learningResult",
+  "container": "",
+  "collection": "",
+  "url": "",
+  "conditions": [],
+  "sorting": [],
+  "pathChains": []
+}

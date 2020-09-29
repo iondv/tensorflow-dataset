@@ -1,0 +1,15 @@
+{
+  "code": "directory.compileOptions",
+  "caption": "Compile options",
+  "type": 1,
+  "orderNumber": 20,
+  "title": "",
+  "hint": "",
+  "classname": "compileOptionRef",
+  "container": "",
+  "collection": "",
+  "url": "",
+  "conditions": [],
+  "sorting": [],
+  "pathChains": []
+}

@@ -1,0 +1,15 @@
+{
+  "code": "directory.type",
+  "caption": "Type",
+  "type": 1,
+  "orderNumber": 10,
+  "title": "",
+  "hint": "",
+  "classname": "type",
+  "container": "",
+  "collection": "",
+  "url": "",
+  "conditions": [],
+  "sorting": [],
+  "pathChains": []
+}

@@ -13,39 +13,8 @@
           "maskName": "",
           "mask": "",
           "mode": 0,
-          "commands": [
-            {
-              "id": "CREATE",
-              "caption": "Create",
-              "visibilityCondition": null,
-              "enableCondition": null,
-              "needSelectedItem": false,
-              "signBefore": false,
-              "signAfter": false,
-              "isBulk": false
-            },
-            {
-              "id": "EDIT",
-              "caption": "Edit",
-              "visibilityCondition": null,
-              "enableCondition": null,
-              "needSelectedItem": true,
-              "signBefore": false,
-              "signAfter": false,
-              "isBulk": false
-            },
-            {
-              "id": "ADD",
-              "caption": "Add",
-              "visibilityCondition": null,
-              "enableCondition": null,
-              "needSelectedItem": false,
-              "signBefore": false,
-              "signAfter": false,
-              "isBulk": false
-            }
-          ],
-          "required": false,
+          "commands": null,
+          "required": true,
           "readonly": false,
           "sorted": false,
           "selectionPaginated": false,
@@ -66,7 +35,7 @@
           "mask": "",
           "mode": 0,
           "commands": null,
-          "required": false,
+          "required": true,
           "readonly": false,
           "sorted": false,
           "selectionPaginated": false,
