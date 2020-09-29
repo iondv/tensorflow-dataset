@@ -1,6 +1,27 @@
 {
   "columns": [
     {
+      "property": "name",
+      "caption": "Name",
+      "type": 1,
+      "orderNumber": 1,
+      "hint": "",
+      "size": null,
+      "maskName": "",
+      "mask": "",
+      "mode": 0,
+      "commands": null,
+      "required": true,
+      "readonly": true,
+      "sorted": true,
+      "selectionPaginated": false,
+      "visibility": "",
+      "enablement": "",
+      "obligation": "",
+      "historyDisplayMode": 0,
+      "tags": ""
+    },
+    {
       "property": "inputShape",
       "caption": "inputShape",
       "type": 2,

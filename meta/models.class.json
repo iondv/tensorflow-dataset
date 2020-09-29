@@ -189,6 +189,12 @@
       "semantic": "",
       "refClass": "",
       "itemsClass": "baseLayers",
+      "allowedSubclasses": [
+        "conv2d",
+        "dense",
+        "flatten",
+        "maxPooling2d"
+      ],
       "backRef": "",
       "backColl": "",
       "defaultValue": "",

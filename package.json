@@ -8,7 +8,9 @@
     "registry": "*",
     "aib": "*"
   },
-  "ionMetaDependencies": {},
+  "ionMetaDependencies": {
+    "viewlib": "0.12.4"
+  },
   "changeState": {
     "major": true,
     "minor": true,

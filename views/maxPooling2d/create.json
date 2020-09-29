@@ -56,7 +56,7 @@
           "mask": "",
           "mode": 0,
           "commands": null,
-          "required": false,
+          "required": true,
           "readonly": false,
           "sorted": false,
           "selectionPaginated": false,

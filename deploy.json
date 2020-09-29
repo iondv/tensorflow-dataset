@@ -112,31 +112,6 @@
                 }
               ]
             }
-          },
-          "treegridController": {
-            "module": "applications/viewlib-extra/lib/controllers/api/treegrid",
-            "initMethod": "init",
-            "initLevel": 0,
-            "options": {
-              "module": "ion://module",
-              "logger": "ion://sysLog",
-              "dataRepo": "ion://securedDataRepo",
-              "metaRepo": "ion://metaRepo",
-              "auth": "ion://auth",
-              "config": {
-                "*": {
-                  "models@tensorflow-dataset": {
-                    "roots":[{
-                      "property": "sequential",
-                      "operation": 1,
-                      "value": [null],
-                      "nestedConditions": []
-                    }],
-                    "childs":["layers"]
-                  }
-                }
-              }
-            }
           }
         }
       }

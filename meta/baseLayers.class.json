@@ -4,10 +4,11 @@
   "key": [
     "guid"
   ],
-  "semantic": "sequential",
+  "semantic": "name|sequential",
   "version": "",
   "ancestor": "",
   "container": "",
+  "abstract": true,
   "creationTracker": "",
   "changeTracker": "",
   "compositeIndexes": null,
