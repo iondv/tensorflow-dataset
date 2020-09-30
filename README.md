@@ -37,11 +37,39 @@ TODO
 
 See metadata structure at the picture
 
-The functions of main classes:
-* object - dataset data object - contains the original image, a normalized image, the classification type specified by the operator, and a link to the prediction results
-* 
+<img src="/data_model.png">
 
+The functions of the main classes:
+* object – dataset data object – contains an original image, a normalized image, the classification type specified by operator, and a link to the prediction results.
+* object prediction – a class that links the data object to the training result – contains a link with training result and the object, prediction percentage, type, and logs.
+* learning result – contains the date of creation and editing, trained model file, and logs.
+* models – contains information about the model type, compilation parameters, and a collection of related layers.
+* layers – model layer – contains information about the layer name, activation, content, and others, depending on the specified layer.
+* dataset – contains information about the name, type of source, source of training and testing, and type of marked label.
 
+## Configuring the application
+
+**Maximum file size.**
+
+Allows to set the maximum size of uploaded files. The configuration is performed for the "File" type attribute on the view form.
+
+_Example:_
+```
+"options": {
+    "maxSize": 256000000
+} 
+```
+
+The size is indicated in KB.
+
+**Allowed file types.**
+
+Allows to specify valid extensions for uploaded files. The configuration is performed for the `"allowedFileTypes"` property of the "File collection" attribute on the class form.
+
+_Example:_
+```
+"allowedFileTypes":  ["csv", "zip"] 
+```
  --------------------------------------------------------------------------  
  
  

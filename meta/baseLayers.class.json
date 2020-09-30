@@ -74,6 +74,80 @@
       "unique": false,
       "autoassigned": false,
       "indexSearch": false
+    },
+    {
+      "name": "name",
+      "caption": "Name",
+      "type": 0,
+      "orderNumber": 60,
+      "mode": 0,
+      "size": null,
+      "decimals": 0,
+      "allowedFileTypes": "",
+      "maxFileCount": 0,
+      "hint": "",
+      "semantic": "",
+      "refClass": "",
+      "itemsClass": "",
+      "backRef": "",
+      "backColl": "",
+      "defaultValue": null,
+      "binding": null,
+      "selConditions": [],
+      "selSorting": null,
+      "selectionProvider": null,
+      "formula": {
+        "if": [
+          {
+            "eq": [
+              "$__class",
+              "dense@tensorflow-dataset"
+            ]
+          },
+          "dense",
+          {
+            "if": [
+              {
+                "eq": [
+                  "$__class",
+                  "conv2d@tensorflow-dataset"
+                ]
+              },
+              "conv2d",
+              {
+                "if": [
+                  {
+                    "eq": [
+                      "$__class",
+                      "flatten@tensorflow-dataset"
+                    ]
+                  },
+                  "flatten",
+                  {
+                    "if": [
+                      {
+                        "eq": [
+                          "$__class",
+                          "maxPooling2d@tensorflow-dataset"
+                        ]
+                      },
+                      "maxPooling2d",
+                      "-"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "eagerLoading": false,
+      "readonly": false,
+      "indexed": true,
+      "nullable": true,
+      "unique": false,
+      "autoassigned": false,
+      "indexSearch": false
     }
   ]
 }

@@ -103,6 +103,29 @@
           "maskName": "",
           "mask": "",
           "mode": 0,
+          "columns": [
+            {
+              "property": "label",
+              "caption": "Label",
+              "type": 1,
+              "orderNumber": 10,
+              "hint": "",
+              "size": null,
+              "maskName": "",
+              "mask": "",
+              "mode": 0,
+              "commands": null,
+              "required": false,
+              "readonly": true,
+              "sorted": true,
+              "selectionPaginated": false,
+              "visibility": "",
+              "enablement": "",
+              "obligation": "",
+              "historyDisplayMode": 0,
+              "tags": ""
+            }
+          ],
           "commands": [
             {
               "id": "CREATE",
