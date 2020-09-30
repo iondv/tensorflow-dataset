@@ -84,7 +84,7 @@
             "initMethod": "init",
             "initLevel": 2,
             "options": {
-              "data": "ion://dataRepo",
+              "dataRepo": "ion://dataRepo",
               "workflows": "ion://workflows",
               "log": "ion://sysLog"
             }
@@ -94,7 +94,7 @@
             "initMethod": "init",
             "initLevel": 2,
             "options": {
-              "data": "ion://dataRepo",
+              "dataRepo": "ion://dataRepo",
               "workflows": "ion://workflows",
               "log": "ion://sysLog"
             }
