@@ -60,7 +60,7 @@
           "readonly": false,
           "sorted": false,
           "selectionPaginated": false,
-          "visibility": ".compileOptions != \"false\"",
+          "visibility": ".compilationOptions != \"false\"",
           "enablement": "",
           "obligation": "",
           "historyDisplayMode": 0,
@@ -112,7 +112,7 @@
           "readonly": false,
           "sorted": false,
           "selectionPaginated": false,
-          "visibility": ".compileOptions != \"true\"",
+          "visibility": ".compilationOptions == \"false\"",
           "enablement": "",
           "obligation": "",
           "historyDisplayMode": 0,
@@ -194,7 +194,7 @@
               "isBulk": false
             },
             {
-              "id": "SELECT",
+              "id": "ADD",
               "caption": "Add",
               "visibilityCondition": null,
               "enableCondition": null,
@@ -212,7 +212,11 @@
           "enablement": "",
           "obligation": "",
           "historyDisplayMode": 0,
-          "tags": ""
+          "tags": "",
+          "options": {
+            "reorderable": true,
+            "dragable" : true
+          }
         }
       ],
       "shortFields": []

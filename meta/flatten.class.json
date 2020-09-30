@@ -13,36 +13,5 @@
   "compositeIndexes": null,
   "journaling": false,
   "isStruct": false,
-  "properties": [
-    {
-      "name": "name",
-      "caption": "Name",
-      "type": 0,
-      "orderNumber": 60,
-      "mode": 0,
-      "size": null,
-      "decimals": 0,
-      "allowedFileTypes": "",
-      "maxFileCount": 0,
-      "hint": "",
-      "semantic": "",
-      "refClass": "",
-      "itemsClass": "",
-      "backRef": "",
-      "backColl": "",
-      "defaultValue": "flatten",
-      "binding": null,
-      "selConditions": [],
-      "selSorting": null,
-      "selectionProvider": null,
-      "formula": null,
-      "eagerLoading": false,
-      "readonly": false,
-      "indexed": true,
-      "nullable": true,
-      "unique": false,
-      "autoassigned": false,
-      "indexSearch": false
-    }
-  ]
+  "properties": []
 }

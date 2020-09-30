@@ -34,6 +34,15 @@
       "import": null,
       "globals": {
         "defaultPath": "",
+        "eagerLoading": {
+          "*": {
+            "objectPrediction@tensorflow-dataset": {
+              "list": [
+                "leaningResult.trainedModel.type"
+              ]
+            }
+          }
+        },
         "inlineForm": true,
         "logo": "",
         "statics": null,
