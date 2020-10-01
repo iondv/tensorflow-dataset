@@ -9,7 +9,19 @@
     "lang": "en",
     "moduleTitles": {},
     "explicitTopMenu": [],
-    "plugins": {},
+    "plugins": {
+      "workflowEvents" : {
+        "module": "applications/tensorflow-dataset/lib/util/workflowEvents.js",
+        "initMethod": "init",
+        "initLevel": 1,
+        "options": {
+          "workflows": "ion://workflows",
+          "metaRepo": "ion://metaRepo",
+          "dataRepo": "ion://dataRepo",
+          "log": "ion://sysLog"
+        }
+      }
+    },
     "jobs": {}
   },
 
