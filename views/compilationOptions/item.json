@@ -48,7 +48,7 @@
         {
           "property": "metrics",
           "caption": "metrics",
-          "type": 1,
+          "type": 3,
           "orderNumber": 40,
           "hint": "",
           "size": null,

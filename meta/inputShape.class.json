@@ -45,9 +45,9 @@
       "indexSearch": false
     },
     {
-      "name": "name",
-      "caption": "Name",
-      "type": 0,
+      "name": "tensorDimensions",
+      "caption": "Tensor dimensions",
+      "type": 14,
       "orderNumber": 20,
       "mode": 0,
       "size": null,
@@ -57,7 +57,7 @@
       "hint": "",
       "semantic": "",
       "refClass": "",
-      "itemsClass": "",
+      "itemsClass": "inputVector",
       "backRef": "",
       "backColl": "",
       "defaultValue": "",

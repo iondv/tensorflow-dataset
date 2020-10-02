@@ -9,7 +9,19 @@
     "lang": "en",
     "moduleTitles": {},
     "explicitTopMenu": [],
-    "plugins": {},
+    "plugins": {
+      "workflowEvents" : {
+        "module": "applications/tensorflow-dataset/lib/util/workflowEvents.js",
+        "initMethod": "init",
+        "initLevel": 1,
+        "options": {
+          "workflows": "ion://workflows",
+          "metaRepo": "ion://metaRepo",
+          "dataRepo": "ion://dataRepo",
+          "log": "ion://sysLog"
+        }
+      }
+    },
     "jobs": {}
   },
 
@@ -34,6 +46,15 @@
       "import": null,
       "globals": {
         "defaultPath": "",
+        "eagerLoading": {
+          "*": {
+            "objectPrediction@tensorflow-dataset": {
+              "list": [
+                "leaningResult.trainedModel.type"
+              ]
+            }
+          }
+        },
         "inlineForm": true,
         "logo": "",
         "statics": null,
@@ -84,7 +105,17 @@
             "initMethod": "init",
             "initLevel": 2,
             "options": {
-              "data": "ion://dataRepo",
+              "dataRepo": "ion://dataRepo",
+              "workflows": "ion://workflows",
+              "log": "ion://sysLog"
+            }
+          },
+          "compileAndTeach": {
+            "module": "applications/tensorflow-dataset/lib/util/compileAndTeach",
+            "initMethod": "init",
+            "initLevel": 2,
+            "options": {
+              "dataRepo": "ion://dataRepo",
               "workflows": "ion://workflows",
               "log": "ion://sysLog"
             }
@@ -94,7 +125,7 @@
             "initMethod": "init",
             "initLevel": 2,
             "options": {
-              "data": "ion://dataRepo",
+              "dataRepo": "ion://dataRepo",
               "workflows": "ion://workflows",
               "log": "ion://sysLog"
             }
@@ -105,6 +136,10 @@
                 {
                   "code": "PROCESS_WITH_TENSORFLOW",
                   "handler": "ion://processWithTensorflow"
+                },
+                {
+                  "code": "COMPILE_AND_TEACH",
+                  "handler": "ion://compileAndTeach"
                 },
                 {
                   "code": "IMPORT_FROM_DATASET",

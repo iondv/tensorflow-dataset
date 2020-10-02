@@ -6,7 +6,7 @@
         {
           "property": "poolSize",
           "caption": "poolSize",
-          "type": 1,
+          "type": 14,
           "orderNumber": 20,
           "hint": "",
           "size": null,
@@ -48,7 +48,7 @@
         {
           "property": "strides",
           "caption": "strides",
-          "type": 1,
+          "type": 14,
           "orderNumber": 30,
           "hint": "",
           "size": null,

@@ -56,7 +56,7 @@
       "maxFileCount": 0,
       "hint": "",
       "semantic": "",
-      "refClass": "learningResult",
+      "refClass": "modelSnapshot",
       "itemsClass": "",
       "backRef": "",
       "backColl": "",

@@ -183,7 +183,7 @@
         {
           "property": "prediction",
           "caption": "Prediction (%)",
-          "type": 14,
+          "type": 15,
           "orderNumber": 60,
           "hint": "",
           "size": null,
@@ -191,7 +191,7 @@
           "mask": "",
           "mode": 0,
           "commands": null,
-          "required": true,
+          "required": false,
           "readonly": false,
           "sorted": false,
           "selectionPaginated": false,

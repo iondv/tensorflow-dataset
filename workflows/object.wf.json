@@ -1,0 +1,48 @@
+{
+  "name": "object",
+  "caption": "Object",
+  "wfClass": "object",
+  "startState": "created",
+  "states": [
+    {
+      "name": "created",
+      "caption": "Created",
+      "maxPeriod": "",
+      "conditions": [],
+      "itemPermissions": [],
+      "propertyPermissions": [],
+      "selectionProviders": []
+    },
+    {
+      "name": "verified",
+      "caption": "Verified",
+      "maxPeriod": "",
+      "conditions": [],
+      "itemPermissions": [],
+      "propertyPermissions": [],
+      "selectionProviders": []
+    }
+  ],
+  "transitions": [
+    {
+      "startState": "created",
+      "finishState": "verified",
+      "name": "verify",
+      "caption": "Verify",
+      "signBefore": false,
+      "signAfter": false,
+      "confirm": false,
+      "confirmMessage": "",
+      "assignments": [],
+      "conditions": [
+        {
+          "property": "verified",
+          "operation": 0,
+          "value": "false",
+          "nestedConditions": []
+        }
+      ],
+      "roles": []
+    }
+  ]
+}

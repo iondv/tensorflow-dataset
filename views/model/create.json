@@ -25,7 +25,7 @@
           "tags": ""
         },
         {
-          "property": "compilationOptions",
+          "property": "useCompilationOptionsJSON",
           "caption": "use JSON for compilation options",
           "type": 4,
           "orderNumber": 30,
@@ -46,7 +46,7 @@
           "tags": ""
         },
         {
-          "property": "compilationOptionsJson",
+          "property": "compilationOptionsJSON",
           "caption": "Compilation options",
           "type": 7,
           "orderNumber": 40,
@@ -60,15 +60,15 @@
           "readonly": false,
           "sorted": false,
           "selectionPaginated": false,
-          "visibility": "",
+          "visibility": ".useCompilationOptionsJSON != \"false\"",
           "enablement": "",
           "obligation": "",
           "historyDisplayMode": 0,
           "tags": ""
         },
         {
-          "property": "compilationOptionsRef",
-          "caption": "Compilation option",
+          "property": "compilationOptions",
+          "caption": "Compilation options",
           "type": 2,
           "orderNumber": 50,
           "hint": "",
@@ -112,7 +112,7 @@
           "readonly": false,
           "sorted": false,
           "selectionPaginated": false,
-          "visibility": "",
+          "visibility": ".useCompilationOptionsJSON == \"false\"",
           "enablement": "",
           "obligation": "",
           "historyDisplayMode": 0,
@@ -194,7 +194,7 @@
               "isBulk": false
             },
             {
-              "id": "SELECT",
+              "id": "ADD",
               "caption": "Add",
               "visibilityCondition": null,
               "enableCondition": null,
@@ -212,7 +212,11 @@
           "enablement": "",
           "obligation": "",
           "historyDisplayMode": 0,
-          "tags": ""
+          "tags": "",
+          "options": {
+            "reorderable": true,
+            "dragable" : true
+          }
         }
       ],
       "shortFields": []
@@ -221,7 +225,7 @@
   "commands": [
     {
       "id": "SAVE",
-      "caption": "Save",
+      "caption": "Create",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,
@@ -231,17 +235,7 @@
     },
     {
       "id": "SAVEANDCLOSE",
-      "caption": "Save and close",
-      "visibilityCondition": null,
-      "enableCondition": null,
-      "needSelectedItem": false,
-      "signBefore": false,
-      "signAfter": false,
-      "isBulk": false
-    },
-    {
-      "id": "DELETE",
-      "caption": "Delete",
+      "caption": "Create and close",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,

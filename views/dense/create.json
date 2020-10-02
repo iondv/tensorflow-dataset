@@ -6,7 +6,7 @@
         {
           "property": "units",
           "caption": "units",
-          "type": 1,
+          "type": 14,
           "orderNumber": 20,
           "hint": "",
           "size": null,

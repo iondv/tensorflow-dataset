@@ -4,9 +4,30 @@
       "caption": "",
       "fullFields": [
         {
-          "property": "optimizer",
-          "caption": "optimizer",
-          "type": 1,
+          "property": "bitmapRowNum",
+          "caption": "Bitmap row to start from",
+          "type": 14,
+          "orderNumber": 10,
+          "hint": "",
+          "size": null,
+          "maskName": "",
+          "mask": "",
+          "mode": 0,
+          "commands": null,
+          "required": true,
+          "readonly": false,
+          "sorted": false,
+          "selectionPaginated": false,
+          "visibility": "",
+          "enablement": "",
+          "obligation": "",
+          "historyDisplayMode": 0,
+          "tags": ""
+        },
+        {
+          "property": "bitmapColumnNum",
+          "caption": "Bitmap column to start from",
+          "type": 14,
           "orderNumber": 20,
           "hint": "",
           "size": null,
@@ -25,9 +46,9 @@
           "tags": ""
         },
         {
-          "property": "loss",
-          "caption": "loss",
-          "type": 1,
+          "property": "width",
+          "caption": "Width",
+          "type": 14,
           "orderNumber": 30,
           "hint": "",
           "size": null,
@@ -46,9 +67,9 @@
           "tags": ""
         },
         {
-          "property": "metrics",
-          "caption": "metrics",
-          "type": 1,
+          "property": "height",
+          "caption": "Height",
+          "type": 14,
           "orderNumber": 40,
           "hint": "",
           "size": null,
@@ -56,7 +77,7 @@
           "mask": "",
           "mode": 0,
           "commands": null,
-          "required": false,
+          "required": true,
           "readonly": false,
           "sorted": false,
           "selectionPaginated": false,
@@ -73,7 +94,7 @@
   "commands": [
     {
       "id": "SAVE",
-      "caption": "Create",
+      "caption": "Save",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,
@@ -83,7 +104,17 @@
     },
     {
       "id": "SAVEANDCLOSE",
-      "caption": "Create and close",
+      "caption": "Save and close",
+      "visibilityCondition": null,
+      "enableCondition": null,
+      "needSelectedItem": false,
+      "signBefore": false,
+      "signAfter": false,
+      "isBulk": false
+    },
+    {
+      "id": "DELETE",
+      "caption": "Delete",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,

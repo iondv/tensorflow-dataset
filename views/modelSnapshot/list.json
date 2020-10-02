@@ -1,9 +1,30 @@
 {
   "columns": [
     {
-      "property": "optimizer",
-      "caption": "optimizer",
-      "type": 1,
+      "property": "creationDate",
+      "caption": "Creation date",
+      "type": 6,
+      "orderNumber": 10,
+      "hint": "",
+      "size": null,
+      "maskName": "",
+      "mask": "",
+      "mode": 0,
+      "commands": null,
+      "required": false,
+      "readonly": false,
+      "sorted": true,
+      "selectionPaginated": false,
+      "visibility": "",
+      "enablement": "",
+      "obligation": "",
+      "historyDisplayMode": 0,
+      "tags": ""
+    },
+    {
+      "property": "dateEditing",
+      "caption": "Date of editing",
+      "type": 6,
       "orderNumber": 20,
       "hint": "",
       "size": null,
@@ -22,9 +43,9 @@
       "tags": ""
     },
     {
-      "property": "loss",
-      "caption": "loss",
-      "type": 1,
+      "property": "logs",
+      "caption": "Logs",
+      "type": 7,
       "orderNumber": 30,
       "hint": "",
       "size": null,
@@ -43,9 +64,9 @@
       "tags": ""
     },
     {
-      "property": "metrics",
-      "caption": "metrics",
-      "type": 1,
+      "property": "model",
+      "caption": "Model",
+      "type": 2,
       "orderNumber": 40,
       "hint": "",
       "size": null,
