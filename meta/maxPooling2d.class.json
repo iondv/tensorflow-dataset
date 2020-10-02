@@ -17,7 +17,7 @@
     {
       "name": "poolSize",
       "caption": "poolSize",
-      "type": 0,
+      "type": 6,
       "orderNumber": 20,
       "mode": 0,
       "size": null,
@@ -47,7 +47,7 @@
     {
       "name": "strides",
       "caption": "strides",
-      "type": 0,
+      "type": 6,
       "orderNumber": 30,
       "mode": 0,
       "size": null,

@@ -110,6 +110,16 @@
               "log": "ion://sysLog"
             }
           },
+          "compileAndTeach": {
+            "module": "applications/tensorflow-dataset/lib/util/compileAndTeach",
+            "initMethod": "init",
+            "initLevel": 2,
+            "options": {
+              "dataRepo": "ion://dataRepo",
+              "workflows": "ion://workflows",
+              "log": "ion://sysLog"
+            }
+          },
           "importFromDataset": {
             "module": "applications/tensorflow-dataset/lib/util/importFromDataset",
             "initMethod": "init",
@@ -126,6 +136,10 @@
                 {
                   "code": "PROCESS_WITH_TENSORFLOW",
                   "handler": "ion://processWithTensorflow"
+                },
+                {
+                  "code": "COMPILE_AND_TEACH",
+                  "handler": "ion://compileAndTeach"
                 },
                 {
                   "code": "IMPORT_FROM_DATASET",

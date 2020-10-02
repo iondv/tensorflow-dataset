@@ -1,9 +1,8 @@
 {
-  "label": "8",
-  "type": "fashion-mnist8",
   "guid": "26961e40-0200-11eb-89dd-f57ce99c1830",
   "_class": "typeLabel@tensorflow-dataset",
   "_classVer": "",
-  "_creator": "demo@local",
+  "label": "8",
+  "type": "fashion-mnist8",
   "___workflowStatus": {}
 }

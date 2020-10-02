@@ -66,7 +66,7 @@
     {
       "property": "filters",
       "caption": "filters",
-      "type": 1,
+      "type": 14,
       "orderNumber": 30,
       "hint": "",
       "size": null,
@@ -87,7 +87,7 @@
     {
       "property": "kernelSize",
       "caption": "kernelSize",
-      "type": 1,
+      "type": 14,
       "orderNumber": 40,
       "hint": "",
       "size": null,

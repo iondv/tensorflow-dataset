@@ -1,0 +1,13 @@
+{
+  "sequential": "3",
+  "inputShape": null,
+  "filters": 16,
+  "kernelSize": 5,
+  "padding": "same",
+  "activation": "relu",
+  "guid": "c0f9c9b0-045c-11eb-8645-7fed23ab1f1e",
+  "_class": "conv2d@tensorflow-dataset",
+  "_classVer": "",
+  "_creator": "demo@local",
+  "___workflowStatus": {}
+}

@@ -209,8 +209,8 @@
       "tags": ""
     },
     {
-      "property": "learningResult",
-      "caption": "Learning result",
+      "property": "modelSnapshot",
+      "caption": "Model snapshot",
       "type": 3,
       "orderNumber": 60,
       "hint": "",

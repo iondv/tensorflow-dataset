@@ -46,8 +46,8 @@
           "tags": ""
         },
         {
-          "property": "trainedModel",
-          "caption": "File of the trained model",
+          "property": "model",
+          "caption": "Model",
           "type": 2,
           "orderNumber": 40,
           "hint": "",
@@ -98,6 +98,27 @@
           "tags": ""
         },
         {
+          "property": "trainedModel",
+          "caption": "File of the trained model",
+          "type": 11,
+          "orderNumber": 50,
+          "hint": "",
+          "size": null,
+          "maskName": "",
+          "mask": "",
+          "mode": 0,
+          "commands": [],
+          "required": false,
+          "readonly": false,
+          "sorted": false,
+          "selectionPaginated": false,
+          "visibility": "",
+          "enablement": "",
+          "obligation": "",
+          "historyDisplayMode": 0,
+          "tags": ""
+        },
+        {
           "property": "dateEditing",
           "caption": "Date of editing",
           "type": 6,
@@ -125,7 +146,7 @@
   "commands": [
     {
       "id": "SAVE",
-      "caption": "Save",
+      "caption": "Create",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,
@@ -135,7 +156,7 @@
     },
     {
       "id": "SAVEANDCLOSE",
-      "caption": "Save and close",
+      "caption": "Create and close",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,
@@ -144,8 +165,8 @@
       "isBulk": false
     },
     {
-      "id": "DELETE",
-      "caption": "Delete",
+      "id": "COMPILE_AND_TEACH",
+      "caption": "Compile & teach",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,
