@@ -67,7 +67,7 @@
           "tags": "",
           "options": {
             "maxSize": 256000000
-          }  
+          }
         },
         {
           "property": "testingSource",
@@ -91,7 +91,7 @@
           "tags": "",
           "options": {
             "maxSize": 256000000
-          }  
+          }
         },
         {
           "property": "typeLabels",
@@ -175,7 +175,7 @@
   "commands": [
     {
       "id": "SAVE",
-      "caption": "Create",
+      "caption": "Save",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,
@@ -185,7 +185,7 @@
     },
     {
       "id": "SAVEANDCLOSE",
-      "caption": "Create and close",
+      "caption": "Save and close",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,

@@ -91,7 +91,7 @@ const buildModel = function () {
 }
 
 // train the model against the training data
-const trainModel = async function (model, trainingData, epochs=epochsValue) {
+const trainModel = async function (model, trainingData, epochs = epochsValue) {
   const options = {
     epochs: epochs,
     verbose: 0,

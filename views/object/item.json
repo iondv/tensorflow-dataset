@@ -309,7 +309,7 @@
               "tags": ""
             },
             {
-              "property": "trainedModel",
+              "property": "modelFile",
               "caption": "File of the trained model",
               "type": 2,
               "orderNumber": 40,
