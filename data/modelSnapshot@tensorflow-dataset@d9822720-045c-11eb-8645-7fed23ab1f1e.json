@@ -5,7 +5,7 @@
   "model": "97706540-045c-11eb-8645-7fed23ab1f1e",
   "modelFile": "",
   "guid": "d9822720-045c-11eb-8645-7fed23ab1f1e",
-  "objectPrediction": [],
+  "typesToLearn": [],
   "_class": "modelSnapshot@tensorflow-dataset",
   "_classVer": "",
   "_creator": "demo@local",

@@ -47,7 +47,7 @@
     {
       "name": "label",
       "caption": "",
-      "type": 0,
+      "type": 6,
       "orderNumber": 20,
       "mode": 0,
       "size": null,

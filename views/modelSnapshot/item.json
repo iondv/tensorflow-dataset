@@ -140,7 +140,7 @@
           "tags": ""
         },
         {
-          "property": "types",
+          "property": "typesToLearn",
           "caption": "Types to learn",
           "type": 3,
           "orderNumber": 70,
@@ -151,8 +151,8 @@
           "mode": 0,
           "columns": [
             {
-              "property": "type",
-              "caption": "Type",
+              "property": "code",
+              "caption": "Code",
               "type": 1,
               "orderNumber": 10,
               "hint": "",
@@ -194,7 +194,7 @@
               "isBulk": false
             },
             {
-              "id": "SELECT",
+              "id": "ADD",
               "caption": "Add",
               "visibilityCondition": null,
               "enableCondition": null,
@@ -273,6 +273,16 @@
     {
       "id": "TEACH_MODEL",
       "caption": "Teach",
+      "visibilityCondition": null,
+      "enableCondition": null,
+      "needSelectedItem": false,
+      "signBefore": false,
+      "signAfter": false,
+      "isBulk": false
+    },
+    {
+      "id": "DELETE",
+      "caption": "Delete",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,

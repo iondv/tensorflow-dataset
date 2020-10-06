@@ -2,7 +2,7 @@
   "guid": "096cb4b0-01f0-11eb-b5af-4b380d564032",
   "_class": "typeLabel@tensorflow-dataset",
   "_classVer": "",
-  "label": "3",
+  "label": 3,
   "type": "fashion-mnist3",
   "___workflowStatus": {}
 }
