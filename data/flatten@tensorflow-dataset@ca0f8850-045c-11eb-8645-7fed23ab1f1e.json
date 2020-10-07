@@ -1,8 +1,7 @@
 {
-  "sequential": "5",
   "guid": "ca0f8850-045c-11eb-8645-7fed23ab1f1e",
   "_class": "flatten@tensorflow-dataset",
   "_classVer": "",
-  "_creator": "demo@local",
+  "sequential": "5",
   "___workflowStatus": {}
 }

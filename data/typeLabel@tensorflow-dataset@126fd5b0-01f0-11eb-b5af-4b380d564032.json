@@ -3,6 +3,7 @@
   "_class": "typeLabel@tensorflow-dataset",
   "_classVer": "",
   "label": 4,
-  "type": "fashion-mnist4",
+  "type": "Coat",
+  "_editor": "demo@local",
   "___workflowStatus": {}
 }

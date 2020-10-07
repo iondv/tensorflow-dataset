@@ -63,16 +63,6 @@
       "signBefore": false,
       "signAfter": false,
       "isBulk": false
-    },
-    {
-      "id": "RECALCULATE_PROCESSING_MODEL",
-      "caption": "Recalculate the processing model",
-      "visibilityCondition": null,
-      "enableCondition": null,
-      "needSelectedItem": false,
-      "signBefore": false,
-      "signAfter": false,
-      "isBulk": false
     }
   ]
 }

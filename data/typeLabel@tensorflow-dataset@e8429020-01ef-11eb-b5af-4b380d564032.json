@@ -3,6 +3,7 @@
   "_class": "typeLabel@tensorflow-dataset",
   "_classVer": "",
   "label": 0,
-  "type": "fashion-mnist0",
+  "type": "T-shirt",
+  "_editor": "demo@local",
   "___workflowStatus": {}
 }
