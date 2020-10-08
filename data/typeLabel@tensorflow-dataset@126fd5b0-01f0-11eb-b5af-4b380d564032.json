@@ -2,7 +2,8 @@
   "guid": "126fd5b0-01f0-11eb-b5af-4b380d564032",
   "_class": "typeLabel@tensorflow-dataset",
   "_classVer": "",
-  "label": "4",
-  "type": "fashion-mnist4",
+  "label": 4,
+  "type": "Coat",
+  "_editor": "demo@local",
   "___workflowStatus": {}
 }

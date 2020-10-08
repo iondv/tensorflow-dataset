@@ -22,8 +22,8 @@
       "tags": ""
     },
     {
-      "property": "leaningResult",
-      "caption": "Leaning result",
+      "property": "modelSnapshot",
+      "caption": "Model snapshot",
       "type": 2,
       "orderNumber": 30,
       "hint": "",

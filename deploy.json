@@ -50,7 +50,7 @@
           "*": {
             "objectPrediction@tensorflow-dataset": {
               "list": [
-                "leaningResult.trainedModel.type"
+                "leaningResult.modelFile.type"
               ]
             }
           }
@@ -110,8 +110,18 @@
               "log": "ion://sysLog"
             }
           },
-          "compileAndTeach": {
-            "module": "applications/tensorflow-dataset/lib/util/compileAndTeach",
+          "compileModel": {
+            "module": "applications/tensorflow-dataset/lib/util/compileModel",
+            "initMethod": "init",
+            "initLevel": 2,
+            "options": {
+              "dataRepo": "ion://dataRepo",
+              "workflows": "ion://workflows",
+              "log": "ion://sysLog"
+            }
+          },
+          "teachModel": {
+            "module": "applications/tensorflow-dataset/lib/util/teachModel",
             "initMethod": "init",
             "initLevel": 2,
             "options": {
@@ -138,8 +148,12 @@
                   "handler": "ion://processWithTensorflow"
                 },
                 {
-                  "code": "COMPILE_AND_TEACH",
-                  "handler": "ion://compileAndTeach"
+                  "code": "COMPILE_MODEL",
+                  "handler": "ion://compileModel"
+                },
+                {
+                  "code": "TEACH_MODEL",
+                  "handler": "ion://teachModel"
                 },
                 {
                   "code": "IMPORT_FROM_DATASET",

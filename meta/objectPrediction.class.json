@@ -4,7 +4,7 @@
   "key": [
     "guid"
   ],
-  "semantic": "leaningResult| |prediction| |%",
+  "semantic": "modelSnapshot| |prediction| |%",
   "version": "",
   "ancestor": "",
   "container": "",
@@ -45,8 +45,8 @@
       "indexSearch": false
     },
     {
-      "name": "leaningResult",
-      "caption": "Leaning result",
+      "name": "modelSnapshot",
+      "caption": "Model snapshot",
       "type": 13,
       "orderNumber": 20,
       "mode": 0,

@@ -1,13 +1,12 @@
 {
-  "sequential": "1",
-  "inputShape": "b13931f0-045c-11eb-8645-7fed23ab1f1e",
-  "filters": 8,
-  "kernelSize": 5,
-  "padding": "same",
-  "activation": "relu",
   "guid": "b57d4440-045c-11eb-8645-7fed23ab1f1e",
   "_class": "conv2d@tensorflow-dataset",
   "_classVer": "",
-  "_creator": "demo@local",
+  "activation": "relu",
+  "filters": 8,
+  "inputShape": "b13931f0-045c-11eb-8645-7fed23ab1f1e",
+  "kernelSize": 5,
+  "padding": "same",
+  "sequential": "1",
   "___workflowStatus": {}
 }

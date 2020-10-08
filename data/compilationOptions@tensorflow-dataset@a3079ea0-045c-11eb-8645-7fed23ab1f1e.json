@@ -1,12 +1,11 @@
 {
-  "optimizer": "adam",
-  "loss": "categoricalCrossentropy",
   "guid": "a3079ea0-045c-11eb-8645-7fed23ab1f1e",
+  "_class": "compilationOptions@tensorflow-dataset",
+  "_classVer": "",
+  "loss": "categoricalCrossentropy",
   "metrics": [
     "a26b3790-045c-11eb-8645-7fed23ab1f1e"
   ],
-  "_class": "compilationOptions@tensorflow-dataset",
-  "_classVer": "",
-  "_creator": "demo@local",
+  "optimizer": "adam",
   "___workflowStatus": {}
 }

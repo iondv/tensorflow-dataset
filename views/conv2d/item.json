@@ -4,27 +4,6 @@
       "caption": "",
       "fullFields": [
         {
-          "property": "name",
-          "caption": "Name",
-          "type": 1,
-          "orderNumber": 1,
-          "hint": "",
-          "size": null,
-          "maskName": "",
-          "mask": "",
-          "mode": 0,
-          "commands": null,
-          "required": true,
-          "readonly": true,
-          "sorted": false,
-          "selectionPaginated": false,
-          "visibility": "",
-          "enablement": "",
-          "obligation": "",
-          "historyDisplayMode": 0,
-          "tags": ""
-        },
-        {
           "property": "inputShape",
           "caption": "inputShape",
           "type": 2,
@@ -100,7 +79,7 @@
         {
           "property": "filters",
           "caption": "filters",
-          "type": 1,
+          "type": 14,
           "orderNumber": 30,
           "hint": "",
           "size": null,
@@ -121,7 +100,7 @@
         {
           "property": "kernelSize",
           "caption": "kernelSize",
-          "type": 1,
+          "type": 14,
           "orderNumber": 40,
           "hint": "",
           "size": null,
@@ -188,7 +167,7 @@
   "commands": [
     {
       "id": "SAVE",
-      "caption": "Save",
+      "caption": "Create",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,
@@ -198,17 +177,7 @@
     },
     {
       "id": "SAVEANDCLOSE",
-      "caption": "Save and close",
-      "visibilityCondition": null,
-      "enableCondition": null,
-      "needSelectedItem": false,
-      "signBefore": false,
-      "signAfter": false,
-      "isBulk": false
-    },
-    {
-      "id": "DELETE",
-      "caption": "Delete",
+      "caption": "Create and close",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,

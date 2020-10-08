@@ -1,9 +1,9 @@
 {
-  "useCompilationOptionsJSON": false,
-  "type": "sequential",
-  "compilationOptionsJSON": "",
-  "compilationOptions": "a3079ea0-045c-11eb-8645-7fed23ab1f1e",
   "guid": "97706540-045c-11eb-8645-7fed23ab1f1e",
+  "_class": "model@tensorflow-dataset",
+  "_classVer": "",
+  "compilationOptions": "a3079ea0-045c-11eb-8645-7fed23ab1f1e",
+  "compilationOptionsJSON": "",
   "layers": [
     "b57d4440-045c-11eb-8645-7fed23ab1f1e",
     "baad6440-045c-11eb-8645-7fed23ab1f1e",
@@ -12,9 +12,7 @@
     "ca0f8850-045c-11eb-8645-7fed23ab1f1e",
     "d58e57b0-045c-11eb-8645-7fed23ab1f1e"
   ],
-  "_class": "model@tensorflow-dataset",
-  "_classVer": "",
-  "_creator": "demo@local",
-  "_editor": "demo@local",
+  "type": "sequential",
+  "useCompilationOptionsJSON": false,
   "___workflowStatus": {}
 }

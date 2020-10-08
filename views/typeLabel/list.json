@@ -3,7 +3,7 @@
     {
       "property": "label",
       "caption": "Label",
-      "type": 1,
+      "type": 14,
       "orderNumber": 10,
       "hint": "",
       "size": null,
