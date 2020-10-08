@@ -43,6 +43,34 @@
           "enablement": "",
           "obligation": "",
           "historyDisplayMode": 0,
+          "tags": "",
+          "options" : {
+            "template" : "imageAreaSelect",
+            "imageAreaSelect": {
+              "aspectRatio": 0.75,
+              "dataAttr": "cropData"
+            }
+          }
+        },
+        {
+          "property": "cropData",
+          "caption": "Crop data",
+          "type": 1,
+          "orderNumber": 25,
+          "hint": "",
+          "size": null,
+          "maskName": "",
+          "mask": "",
+          "mode": 0,
+          "commands": null,
+          "required": false,
+          "readonly": false,
+          "sorted": false,
+          "selectionPaginated": false,
+          "visibility": "",
+          "enablement": "",
+          "obligation": "",
+          "historyDisplayMode": 0,
           "tags": ""
         },
         {
