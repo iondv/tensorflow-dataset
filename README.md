@@ -47,6 +47,19 @@ The functions of the main classes:
 * layers – model layer – contains information about the layer name, activation, content, and others, depending on the specified layer.
 * dataset – contains information about the name, type of source, source of training and testing, and type of marked label.
 
+## Building the application
+
+Building this application on linux may require the g++ to be installed (to build tfjs-node). Usually it can be found in the OS' package tree by itself or contained in a basic development bundle like build-essential on Ubuntu.
+
+Ubuntu g++ installation example:
+```
+apt install g++
+```
+or
+```
+apt install build-essential
+```
+
 ## Configuring the application
 
 **Maximum file size.**
