@@ -1,0 +1,13 @@
+{
+  "recognizedType": "Pullover",
+  "modelSnapshot": "82483390-1975-11eb-8617-834a23d06415",
+  "type": null,
+  "log": "Loading model...\nRunning prediction...\nprediction: Pullover (59%)\nT-shirt: 0.0005\nTrouser: 0\nPullover: 0.5996\nDress: 0\nCoat: 0.2373\nSandal: 0\nShirt: 0.1617\nSneaker: 0\nBag: 0.0008\nAnkle boot: 0\n",
+  "prediction": 59.95946526527405,
+  "object": "94946920-197e-11eb-b8d9-2dd9d903be49",
+  "guid": "9f4d9e90-197e-11eb-b8d9-2dd9d903be49",
+  "_class": "objectPrediction@tensorflow-dataset",
+  "_classVer": "",
+  "_creator": "demo@local",
+  "___workflowStatus": {}
+}

@@ -43,9 +43,9 @@
       "tags": ""
     },
     {
-      "property": "logs",
-      "caption": "Logs",
-      "type": 7,
+      "property": "typesToLearn",
+      "caption": "Types",
+      "type": 3,
       "orderNumber": 30,
       "hint": "",
       "size": null,

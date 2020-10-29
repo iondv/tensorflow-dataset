@@ -6,7 +6,7 @@ const trainDataUrl = 'file://./fashion-mnist/fashion-mnist_train.csv';
 const testDataUrl = 'file://./fashion-mnist/fashion-mnist_test.csv';
 
 // Build, train a model with a subset of the data
-const numOfClasses = 5;
+const numOfClasses = 10;
 
 const imageWidth = 28;
 const imageHeight = 28;
