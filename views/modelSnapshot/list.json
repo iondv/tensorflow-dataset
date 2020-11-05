@@ -105,6 +105,16 @@
       "signBefore": false,
       "signAfter": false,
       "isBulk": false
+    },
+    {
+      "id": "DELETE",
+      "caption": "Delete",
+      "visibilityCondition": null,
+      "enableCondition": null,
+      "needSelectedItem": true,
+      "signBefore": false,
+      "signAfter": false,
+      "isBulk": false
     }
   ]
 }

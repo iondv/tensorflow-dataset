@@ -31,48 +31,7 @@
       "maskName": "",
       "mask": "",
       "mode": 0,
-      "commands": [
-        {
-          "id": "CREATE",
-          "caption": "Create",
-          "visibilityCondition": null,
-          "enableCondition": null,
-          "needSelectedItem": false,
-          "signBefore": false,
-          "signAfter": false,
-          "isBulk": false
-        },
-        {
-          "id": "EDIT",
-          "caption": "Edit",
-          "visibilityCondition": null,
-          "enableCondition": null,
-          "needSelectedItem": true,
-          "signBefore": false,
-          "signAfter": false,
-          "isBulk": false
-        },
-        {
-          "id": "SELECT",
-          "caption": "Add",
-          "visibilityCondition": null,
-          "enableCondition": null,
-          "needSelectedItem": false,
-          "signBefore": false,
-          "signAfter": false,
-          "isBulk": false
-        },
-        {
-          "id": "RECLASSIFY_ITEM",
-          "caption": "Reclassify",
-          "visibilityCondition": null,
-          "enableCondition": null,
-          "needSelectedItem": false,
-          "signBefore": false,
-          "signAfter": false,
-          "isBulk": false
-        }
-      ],
+      "commands": null,
       "required": false,
       "readonly": false,
       "sorted": true,
@@ -105,7 +64,7 @@
       "tags": ""
     },
     {
-      "property": "image",
+      "property": "normalizedImage",
       "caption": "Image",
       "type": 13,
       "orderNumber": 40,
@@ -114,38 +73,7 @@
       "maskName": "",
       "mask": "",
       "mode": 0,
-      "commands": [
-        {
-          "id": "CREATE",
-          "caption": "Create",
-          "visibilityCondition": null,
-          "enableCondition": null,
-          "needSelectedItem": false,
-          "signBefore": false,
-          "signAfter": false,
-          "isBulk": false
-        },
-        {
-          "id": "EDIT",
-          "caption": "Edit",
-          "visibilityCondition": null,
-          "enableCondition": null,
-          "needSelectedItem": true,
-          "signBefore": false,
-          "signAfter": false,
-          "isBulk": false
-        },
-        {
-          "id": "SELECT",
-          "caption": "Add",
-          "visibilityCondition": null,
-          "enableCondition": null,
-          "needSelectedItem": false,
-          "signBefore": false,
-          "signAfter": false,
-          "isBulk": false
-        }
-      ],
+      "commands": null,
       "required": false,
       "readonly": false,
       "sorted": true,
@@ -166,38 +94,7 @@
       "maskName": "",
       "mask": "",
       "mode": 0,
-      "commands": [
-        {
-          "id": "CREATE",
-          "caption": "Create",
-          "visibilityCondition": null,
-          "enableCondition": null,
-          "needSelectedItem": false,
-          "signBefore": false,
-          "signAfter": false,
-          "isBulk": false
-        },
-        {
-          "id": "EDIT",
-          "caption": "Edit",
-          "visibilityCondition": null,
-          "enableCondition": null,
-          "needSelectedItem": true,
-          "signBefore": false,
-          "signAfter": false,
-          "isBulk": false
-        },
-        {
-          "id": "SELECT",
-          "caption": "Add",
-          "visibilityCondition": null,
-          "enableCondition": null,
-          "needSelectedItem": false,
-          "signBefore": false,
-          "signAfter": false,
-          "isBulk": false
-        }
-      ],
+      "commands": null,
       "required": false,
       "readonly": false,
       "sorted": true,
@@ -218,38 +115,7 @@
       "maskName": "",
       "mask": "",
       "mode": 0,
-      "commands": [
-        {
-          "id": "CREATE",
-          "caption": "Create",
-          "visibilityCondition": null,
-          "enableCondition": null,
-          "needSelectedItem": false,
-          "signBefore": false,
-          "signAfter": false,
-          "isBulk": false
-        },
-        {
-          "id": "EDIT",
-          "caption": "Edit",
-          "visibilityCondition": null,
-          "enableCondition": null,
-          "needSelectedItem": true,
-          "signBefore": false,
-          "signAfter": false,
-          "isBulk": false
-        },
-        {
-          "id": "SELECT",
-          "caption": "Add",
-          "visibilityCondition": null,
-          "enableCondition": null,
-          "needSelectedItem": false,
-          "signBefore": false,
-          "signAfter": false,
-          "isBulk": false
-        }
-      ],
+      "commands": null,
       "required": false,
       "readonly": false,
       "sorted": true,
@@ -275,6 +141,16 @@
     {
       "id": "EDIT",
       "caption": "Edit",
+      "visibilityCondition": null,
+      "enableCondition": null,
+      "needSelectedItem": true,
+      "signBefore": false,
+      "signAfter": false,
+      "isBulk": false
+    },
+    {
+      "id": "DELETE",
+      "caption": "Delete",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": true,

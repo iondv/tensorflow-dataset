@@ -56,6 +56,29 @@
           "mask": "",
           "mode": 0,
           "commands": null,
+          "columns": [
+            {
+              "property": "metric",
+              "caption": "Metric",
+              "type": 1,
+              "orderNumber": 20,
+              "hint": "",
+              "size": null,
+              "maskName": "",
+              "mask": "",
+              "mode": 0,
+              "commands": null,
+              "required": false,
+              "readonly": false,
+              "sorted": true,
+              "selectionPaginated": false,
+              "visibility": "",
+              "enablement": "",
+              "obligation": "",
+              "historyDisplayMode": 0,
+              "tags": ""
+            }
+          ],
           "required": false,
           "readonly": false,
           "sorted": false,
@@ -84,16 +107,6 @@
     {
       "id": "SAVEANDCLOSE",
       "caption": "Save and close",
-      "visibilityCondition": null,
-      "enableCondition": null,
-      "needSelectedItem": false,
-      "signBefore": false,
-      "signAfter": false,
-      "isBulk": false
-    },
-    {
-      "id": "DELETE",
-      "caption": "Delete",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,
