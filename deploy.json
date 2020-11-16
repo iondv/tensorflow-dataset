@@ -100,12 +100,12 @@
             "options": {
               "configs": {
                 "modelSnapshot@tensorflow-dataset": {
-                  "listToDocx": {
+                  "listToExcel": {
                     "type": "list",
                     "caption": "Comparison of model snapshots",
                     "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-                    "extension": "docx",
-                    "preprocessor": "ion://listToDocx",
+                    "extension": "xlsx",
+                    "preprocessor": "ion://listToExcel",
                     "isBackground": false,
                     "fileNameTemplate": "Comparison of model snapshots"
                   }
