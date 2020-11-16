@@ -313,6 +313,81 @@
       "unique": false,
       "autoassigned": false,
       "indexSearch": false
+    },
+    {
+      "name": "objectPrediction",
+      "caption": "object Predictions",
+      "type": 14,
+      "orderNumber": 90,
+      "mode": 0,
+      "size": null,
+      "decimals": 0,
+      "allowedFileTypes": "",
+      "maxFileCount": 0,
+      "hint": "",
+      "semantic": "",
+      "refClass": "",
+      "itemsClass": "objectPrediction",
+      "backRef": "modelSnapshot",
+      "backColl": "",
+      "defaultValue": "",
+      "binding": null,
+      "selConditions": [],
+      "selSorting": null,
+      "selectionProvider": null,
+      "formula": null,
+      "eagerLoading": false,
+      "readonly": false,
+      "indexed": true,
+      "nullable": true,
+      "unique": false,
+      "autoassigned": false,
+      "indexSearch": false
+    },
+    {
+      "name": "predictionCalc",
+      "caption": "predictionCalc",
+      "type": 8,
+      "orderNumber": 50,
+      "mode": 0,
+      "size": null,
+      "decimals": 0,
+      "allowedFileTypes": "",
+      "maxFileCount": 0,
+      "hint": "",
+      "semantic": "",
+      "refClass": "",
+      "itemsClass": "",
+      "backRef": "",
+      "backColl": "",
+      "defaultValue": "",
+      "binding": null,
+      "selConditions": [],
+      "selSorting": null,
+      "selectionProvider": null,
+      "formula": {
+        "div": [ 
+          {
+            "sum": [
+              "$objectPrediction",
+              "prediction"
+            ]
+          },
+          {
+            "count": [
+              "$objectPrediction"
+            ]
+          }
+        ]
+      },
+      "eagerLoading": false,
+      "readonly": false,
+      "indexed": true,
+      "nullable": true,
+      "unique": false,
+      "autoassigned": false,
+      "cached": true,
+      "indexSearch": false
     }
   ]
 }

@@ -96,8 +96,21 @@
             }
           },
           "export": {
+            "dataRepo": "ion://dataRepo",
             "options": {
-              "configs": {}
+              "configs": {
+                "modelSnapshot@tensorflow-dataset": {
+                  "listToDocx": {
+                    "type": "list",
+                    "caption": "Comparison of model snapshots",
+                    "mimeType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+                    "extension": "docx",
+                    "preprocessor": "ion://listToDocx",
+                    "isBackground": false,
+                    "fileNameTemplate": "Comparison of model snapshots"
+                  }
+                }
+              }
             }
           },
           "processWithTensorflow": {

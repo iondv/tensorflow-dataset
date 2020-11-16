@@ -6,7 +6,7 @@
         {
           "property": "optimizer",
           "caption": "Optimizer",
-          "type": 2,
+          "type": 5,
           "orderNumber": 40,
           "hint": "",
           "size": null,
@@ -33,16 +33,6 @@
               "signBefore": false,
               "signAfter": false,
               "isBulk": false
-            },
-            {
-              "id": "SELECT",
-              "caption": "Add",
-              "visibilityCondition": null,
-              "enableCondition": null,
-              "needSelectedItem": false,
-              "signBefore": false,
-              "signAfter": false,
-              "isBulk": false
             }
           ],
           "required": false,
@@ -58,7 +48,7 @@
         {
           "property": "loss",
           "caption": "Loss",
-          "type": 2,
+          "type": 5,
           "orderNumber": 50,
           "hint": "",
           "size": null,
@@ -82,16 +72,6 @@
               "visibilityCondition": null,
               "enableCondition": null,
               "needSelectedItem": true,
-              "signBefore": false,
-              "signAfter": false,
-              "isBulk": false
-            },
-            {
-              "id": "SELECT",
-              "caption": "Add",
-              "visibilityCondition": null,
-              "enableCondition": null,
-              "needSelectedItem": false,
               "signBefore": false,
               "signAfter": false,
               "isBulk": false

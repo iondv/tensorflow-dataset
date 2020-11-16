@@ -13,6 +13,9 @@
   "compositeIndexes": null,
   "journaling": false,
   "isStruct": false,
+  "cacheDependencies": [
+    "modelSnapshot"
+  ],
   "properties": [
     {
       "name": "guid",
