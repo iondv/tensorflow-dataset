@@ -247,7 +247,7 @@
           "mode": 0,
           "commands": null,
           "required": false,
-          "readonly": false,
+          "readonly": true,
           "sorted": false,
           "selectionPaginated": false,
           "visibility": "",
