@@ -5,16 +5,47 @@
       "fullFields": [
         {
           "property": "optimizer",
-          "caption": "optimizer",
-          "type": 1,
-          "orderNumber": 20,
+          "caption": "Optimizer",
+          "type": 2,
+          "orderNumber": 40,
           "hint": "",
           "size": null,
           "maskName": "",
           "mask": "",
           "mode": 0,
-          "commands": null,
-          "required": true,
+          "commands": [
+            {
+              "id": "CREATE",
+              "caption": "Create",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": false,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "EDIT",
+              "caption": "Edit",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "SELECT",
+              "caption": "Add",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": false,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            }
+          ],
+          "required": false,
           "readonly": false,
           "sorted": false,
           "selectionPaginated": false,
@@ -26,16 +57,47 @@
         },
         {
           "property": "loss",
-          "caption": "loss",
-          "type": 1,
-          "orderNumber": 30,
+          "caption": "Loss",
+          "type": 2,
+          "orderNumber": 50,
           "hint": "",
           "size": null,
           "maskName": "",
           "mask": "",
           "mode": 0,
-          "commands": null,
-          "required": true,
+          "commands": [
+            {
+              "id": "CREATE",
+              "caption": "Create",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": false,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "EDIT",
+              "caption": "Edit",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "SELECT",
+              "caption": "Add",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": false,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            }
+          ],
+          "required": false,
           "readonly": false,
           "sorted": false,
           "selectionPaginated": false,
@@ -47,15 +109,46 @@
         },
         {
           "property": "metrics",
-          "caption": "metrics",
+          "caption": "Metrics",
           "type": 3,
-          "orderNumber": 40,
+          "orderNumber": 70,
           "hint": "",
           "size": null,
           "maskName": "",
           "mask": "",
           "mode": 0,
-          "commands": null,
+          "commands": [
+            {
+              "id": "CREATE",
+              "caption": "Create",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": false,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "EDIT",
+              "caption": "Edit",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "ADD",
+              "caption": "Add",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": false,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            }
+          ],
           "columns": [
             {
               "property": "metric",

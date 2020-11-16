@@ -2,7 +2,7 @@
   "code": "directory.compilationOptions",
   "caption": "Compilation options",
   "type": 1,
-  "orderNumber": 20,
+  "orderNumber": 40,
   "title": "",
   "hint": "",
   "classname": "compilationOptions",

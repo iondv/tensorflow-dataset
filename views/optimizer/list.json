@@ -1,10 +1,31 @@
 {
   "columns": [
     {
+      "property": "key",
+      "caption": "Key",
+      "type": 1,
+      "orderNumber": 10,
+      "hint": "",
+      "size": null,
+      "maskName": "",
+      "mask": "",
+      "mode": 0,
+      "commands": null,
+      "required": false,
+      "readonly": true,
+      "sorted": true,
+      "selectionPaginated": false,
+      "visibility": "",
+      "enablement": "",
+      "obligation": "",
+      "historyDisplayMode": 0,
+      "tags": ""
+    },
+    {
       "property": "name",
       "caption": "Name",
       "type": 1,
-      "orderNumber": 10,
+      "orderNumber": 20,
       "hint": "",
       "size": null,
       "maskName": "",
@@ -36,16 +57,6 @@
     {
       "id": "EDIT",
       "caption": "Edit",
-      "visibilityCondition": null,
-      "enableCondition": null,
-      "needSelectedItem": true,
-      "signBefore": false,
-      "signAfter": false,
-      "isBulk": false
-    },
-    {
-      "id": "DELETE",
-      "caption": "Delete",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": true,
