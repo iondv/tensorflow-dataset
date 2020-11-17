@@ -45,7 +45,7 @@
     "registry": {
       "import": null,
       "globals": {
-        "defaultPath": "",
+        "defaultPath": "tensorflow-dataset@object",
         "eagerLoading": {
           "*": {
             "objectPrediction@tensorflow-dataset": {
