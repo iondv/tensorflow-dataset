@@ -1,0 +1,42 @@
+{
+  "name": "imageDownloader",
+  "caption": "Image download task",
+  "wfClass": "imageDownloader",
+  "startState": "created",
+  "states": [
+    {
+      "name": "created",
+      "caption": "Created",
+      "maxPeriod": "",
+      "conditions": [],
+      "itemPermissions": [],
+      "propertyPermissions": [],
+      "selectionProviders": []
+    },
+    {
+      "name": "started",
+      "caption": "Started",
+      "maxPeriod": "",
+      "conditions": [],
+      "itemPermissions": [],
+      "propertyPermissions": [],
+      "selectionProviders": []
+    }
+  ],
+  "transitions": [
+    {
+      "startState": "created",
+      "finishState": "started",
+      "name": "download",
+      "caption": "Download",
+      "signBefore": false,
+      "signAfter": false,
+      "confirm": false,
+      "confirmMessage": "",
+      "assignments": [],
+      "conditions": [
+      ],
+      "roles": []
+    }
+  ]
+}
