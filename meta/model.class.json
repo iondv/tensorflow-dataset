@@ -200,7 +200,12 @@
       "defaultValue": "",
       "binding": null,
       "selConditions": [],
-      "selSorting": null,
+      "selSorting": [
+        {
+          "property": "sequential",
+          "mode": 0
+        }
+      ],
       "selectionProvider": null,
       "formula": null,
       "eagerLoading": false,
