@@ -15,3 +15,14 @@
 * _Logs_ - для каждого типа вероятность того, что объект относится к этому типу. 
 * _Prediction_ - вероятность, с которой сеть уверена в решении, 
 * _Recognized type_ - тип, к которому в итоге решено отнести объект.
+
+
+### Следующая страница: [Экспорт отчета](/tutorial/ru/4_export_report.md)  
+
+--------------------------------------------------------------------------  
+
+ #### [Licence](/LICENSE) &ensp;  [Contact us](https://iondv.ru/index.html) &ensp;  [English](/tutorial/en/1_create_application.md)    &ensp;   <div><img src="https://mc.iondv.com/watch/local/docs/framework" style="position:absolute; left:-9999px;" height=1 width=1 alt="iondv metrics"></div>        
+--------------------------------------------------------------------------  
+
+Copyright (c) 2018 **LLC "ION DV"**.  
+All rights reserved.   
