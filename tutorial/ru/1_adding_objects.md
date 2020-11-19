@@ -36,3 +36,13 @@
 * "Check" - если модель будет проверяться.
 
 Далее необходимо сохранить изменения и закрыть форму действием `Save and close`. Созданный объект отобразится в списке пункта навигации **Object**
+
+### Следующая страница: [Обучение модели](/tutorial/ru/2_model_training.md)  
+
+--------------------------------------------------------------------------  
+
+ #### [Licence](/LICENSE) &ensp;  [Contact us](https://iondv.ru/index.html) &ensp;  [English](/tutorial/en/1_create_application.md)    &ensp;   <div><img src="https://mc.iondv.com/watch/local/docs/framework" style="position:absolute; left:-9999px;" height=1 width=1 alt="iondv metrics"></div>        
+--------------------------------------------------------------------------  
+
+Copyright (c) 2018 **LLC "ION DV"**.  
+All rights reserved.   
