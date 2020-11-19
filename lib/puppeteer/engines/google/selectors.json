@@ -1,5 +1,9 @@
 {
   "queryInput": "#sbtc > div > div > input",
   "resultsContainer": "#islrg > div.islrc",
-  "resultsImage": "#islrg > div.islrc > div > a > div > img"
+  "resultsImage": "#islrg > div.islrc > div > a > div > img",
+  "fullImageContainer": "#islsp",
+  "fullImage": "#islsp > div > div > div > div > div:not([aria-hidden=true]) > c-wiz > div > div > div > div > a > img",
+  "fullImageLoaderNotVisible1": "#islsp > div > div > div > div > div:not([aria-hidden=true]) > c-wiz > div > div > div > div > div[style=\"display: none;\"]",
+  "fullImageLoaderNotVisible2": "#islsp > div > div > div > div > div:not([aria-hidden=true]) > c-wiz > div > div > div > div > div[style=\"display: none\"]"
 }
