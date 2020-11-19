@@ -209,7 +209,18 @@
           "maskName": "",
           "mask": "",
           "mode": 0,
-          "commands": null,
+          "commands": [
+            {
+              "id": "EDIT",
+              "caption": "Edit",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            }
+          ],
           "required": false,
           "readonly": true,
           "sorted": true,

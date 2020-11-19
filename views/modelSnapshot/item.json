@@ -57,16 +57,6 @@
           "mode": 0,
           "commands": [
             {
-              "id": "CREATE",
-              "caption": "Create",
-              "visibilityCondition": null,
-              "enableCondition": null,
-              "needSelectedItem": false,
-              "signBefore": false,
-              "signAfter": false,
-              "isBulk": false
-            },
-            {
               "id": "EDIT",
               "caption": "Edit",
               "visibilityCondition": null,
@@ -75,20 +65,10 @@
               "signBefore": false,
               "signAfter": false,
               "isBulk": false
-            },
-            {
-              "id": "SELECT",
-              "caption": "Add",
-              "visibilityCondition": null,
-              "enableCondition": null,
-              "needSelectedItem": false,
-              "signBefore": false,
-              "signAfter": false,
-              "isBulk": false
             }
           ],
           "required": true,
-          "readonly": false,
+          "readonly": true,
           "sorted": false,
           "selectionPaginated": false,
           "visibility": "",
