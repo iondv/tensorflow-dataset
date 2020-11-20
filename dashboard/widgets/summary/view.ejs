@@ -1,0 +1,99 @@
+<% let id = widget.generateId() %>
+<% let _cssBackground = typeof cssBackground === 'undefined' ? 'bg-white' : cssBackground;  %>
+<% let _title = typeof title === 'undefined' ? params.title : title; %>
+<% let _params = typeof params === 'undefined' ? {} : params; %>
+
+<div id="<%- id %>" class="widget task-widget loading <%- _cssBackground %>"
+     data-params="<%= JSON.stringify(_params) %>"
+     data-sources="<%= JSON.stringify(sources) %>">
+  <div class="widget-overlay">
+    <span class="glyphicon glyphicon-refresh spinning"></span>
+  </div>
+  <div class="widget-body full-height">
+    <% if (_title) { %>
+    <h3 class=""><%= _title %></h3>
+    <% } %>
+    <div class="loadable-content full-height">
+    </div>
+  </div>
+  <div class="widget-close">×</div>
+</div>
+
+<script>
+  $(function () {
+    var $widget = $('#<%- id %>');
+
+    $widget.data('init', function () {
+
+      var $content = $widget.find('.loadable-content');
+      var sources = $widget.data('sources');
+      var result = [];
+
+      sources.forEach(function (source) {
+        addAsyncSerialHandler(function (next) {
+          $.ajax({
+            url: source.url,
+            type: 'POST',
+            dataType: 'json',
+            contentType: 'application/json',
+            data: JSON.stringify($.extend({
+              length: 1
+            }, source.urlData))
+          }).done(function (data) {
+            source.value = data && data.recordsTotal || 0;
+          }).always(next);
+        });
+      });
+
+      addAsyncSerialHandler(function (next) {
+        setTimeout(next, 0);
+        $widget.removeClass('loading');
+        var items = sources.map(function (item) {
+          return {
+            'name': item.caption,
+            'y': item.value,
+            'colorIndex': item.colorIndex
+          };
+        });
+        Highcharts.chart($content.get(0), {
+          credits: false,
+          chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            spacing: [0,0,0,0],
+            type: 'pie'
+          },
+          title: false,
+          tooltip: {
+            pointFormat: '<b>{point.percentage:.1f}%</b>',
+            headerFormat: '<span style="font-size: 12px">{point.key}</span><br/>'
+          },
+          plotOptions: {
+            pie: {
+              allowPointSelect: true,
+              cursor: 'pointer',
+              dataLabels: {
+                enabled: false
+              },
+              showInLegend: true
+            }
+          },
+          legend: {
+            align: 'right',
+            verticalAlign: 'top',
+            layout: 'vertical',
+            labelFormat: '{name} - {y}',
+            x: 0,
+            y: 0
+          },
+          series: [{
+            name: 'Name',
+            colorByPoint: true,
+            data: items
+          }]
+        });
+      });
+    });
+  });
+</script>

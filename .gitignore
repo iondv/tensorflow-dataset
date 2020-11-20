@@ -8,6 +8,8 @@
 /docker/*
 /**/node_modules/*
 
+/static/vendor
+
 /view/**/node_modules/*
 /view/**/*.less.css
 /view/**/*.min.css

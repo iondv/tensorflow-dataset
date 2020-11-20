@@ -1,0 +1,55 @@
+<% let id = widget.generateId() %>
+<% let _cssBackground = typeof cssBackground === 'undefined' ? 'bg-white' : cssBackground;  %>
+<% let _title = typeof title === 'undefined' ? params.title : title; %>
+<% let _params = typeof params === 'undefined' ? {} : params; %>
+
+<div id="<%- id %>" class="widget task-widget loading <%- _cssBackground %>"
+     data-params="<%= JSON.stringify(_params) %>"
+     data-url-data="<%= JSON.stringify(urlData) %>">
+  <div class="widget-overlay">
+    <span class="glyphicon glyphicon-refresh spinning"></span>
+  </div>
+  <div class="widget-body">
+    <h3 class=""><%= _title %></h3>
+    <div class="loadable-content"></div>
+    <div class="controls">
+      <a href="<%- redirect %>" class="btn btn-default">Перейти к списку</a>
+    </div>
+  </div>
+  <div class="widget-close">×</div>
+</div>
+
+<script>
+  $(function () {
+    var $widget = $('#<%- id %>');
+
+    $widget.data('init', function () {
+      var $content = $widget.find('.loadable-content');
+      addAsyncSerialHandler(function (next) {
+        $.ajax({
+          url: '<%- url %>',
+          type: 'POST',
+          dataType: 'json',
+          contentType: 'application/json',
+          data: JSON.stringify($.extend({
+            length: 1
+          }, $widget.data('urlData')))
+        }).done(function (data) {
+          if (data && data.recordsTotal) {
+            $widget.addClass('bg-success');
+            $content.html('Number of records - <span class="counter">'+ data.recordsTotal +'</span>');
+          } else {
+            $widget.addClass('bg-default');
+            $content.html('The list is empty');
+          }
+        }).fail(function (xhr) {
+          $widget.addClass('bg-danger');
+          $content.html('Error getting data');
+        }).always(function () {
+          $widget.removeClass('loading bg-white');
+          next();
+        })
+      });
+    });
+  });
+</script>

@@ -1,0 +1,113 @@
+.gridster table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.gridster .demo {
+  margin: 3em 0;
+  padding: 7.5em 0 5.5em;
+  background: #26941f;
+}
+.gridster .demo:hover .gridster {
+  margin: 0 auto;
+  opacity: .8;
+  transition: opacity .6s;
+}
+.gridster .content {
+  color: white;
+}
+.gridster .gs-w {
+  background: #f1f2f3;
+  cursor: pointer;
+  box-shadow: none;
+  border: 1px solid #d0d0d0;
+}
+.gridster .player {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  background: #BBB;
+}
+.gridster .preview-holder {
+  border: none !important;
+  border-radius: 0 !important;
+  background: red !important;
+}
+.gridster li {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 100%;
+  list-style: none;
+}
+.gridster ul {
+  list-style-type: none;
+}
+.gridster-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.gridster .controls {
+  margin-bottom: 10px;
+}
+.gridster .pad20 { padding: 20px; }
+
+.gridster .spinning {
+  -webkit-animation: spinning 2s infinite linear;
+  animation: spinning 2s infinite linear;
+}
+@keyframes spinning {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg)
+  }
+}
+.gridster .widget {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.gridster .widget.active {
+  display: block;
+}
+.gridster .widget-overlay {
+  display: none;
+  height: 100%;
+}
+.gridster .widget-overlay .spinning {
+  position: relative;
+  top: 50%;
+  margin-top: -15px;
+  font-size: 24px;
+  opacity: 0.7;
+}
+.gridster .widget.loading .widget-overlay {
+  display: block;
+  height: 100%;
+}
+.gridster .widget.loading .widget-body {
+  display: none;
+}
+.gridster .widget-close {
+  display: none;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  font-size: 18px;
+  z-index: 101;
+  opacity:0.6;
+  cursor: pointer;
+}
+.gridster .widget-close:hover {
+  opacity: 1.0;
+}
+.gridster .widget:hover .widget-close {
+  display: block;
+}
+
+.full-height {
+  height: 100%;
+}

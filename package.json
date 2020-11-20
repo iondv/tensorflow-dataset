@@ -6,6 +6,7 @@
   "ionModulesDependencies": {
     "ionadmin": "*",
     "registry": "*",
+    "dashboard": "*",
     "aib": "*"
   },
   "ionMetaDependencies": {

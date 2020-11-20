@@ -175,6 +175,28 @@
               ]
             }
           }
+        },
+        "dashboard": {
+          "tensorflow-dataset": {
+            "modules": {
+              "dashboard": {}
+            }
+          }
+        }
+      }
+    },
+    "dashboard": {
+      "globals": {
+        "namespaces": {
+          "tensorflow-dataset": "Tensorflow dataset"
+        },
+        "root": {
+          "tensorflow-dataset": "applications/tensorflow-dataset/dashboard"
+        },
+        "layouts": {
+          "task": {
+            "title": "Amount of data"
+          }
         }
       }
     }
