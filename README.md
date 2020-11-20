@@ -18,6 +18,11 @@ open source visual development environment to create metadata of an application.
 
 * Documentation is available at [Github repository](https://github.com/iondv/framework/blob/master/docs/en/index.md).
 
+## Demo
+Watch a brief video about application - https://www.youtube.com/watch?v=529TwrJoEKQ
+
+Demo access to the system without registration: https://tensorflow-dataset.iondv.com. User login demo, password ion-demo. Demo mode has learning capabilities restricted to 30 patterns per run and dataset imports limited to 50 objects per run.
+
 
 ## Description of features
 
