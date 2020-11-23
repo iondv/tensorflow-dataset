@@ -1,0 +1,7 @@
+{
+  "queryInput": "#sb_form_q",
+  "searchButton": "#sb_form > label",
+  "imagesCategory": "#b-scopeListItem-images",
+  "resultsContainer": "#mmComponent_images_2",
+  "resultsImage": "#mmComponent_images_2 > ul > li > div > div > a"
+}

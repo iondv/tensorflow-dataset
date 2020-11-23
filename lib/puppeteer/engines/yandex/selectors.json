@@ -1,0 +1,6 @@
+{
+  "queryInput": ".serp-header .serp-header__search2 > form > div > span.input > span.input__box > input",
+  "searchButton": ".serp-header__search2 .search2 .search2__button .websearch-button",
+  "resultsContainer": ".serp-controller__content .serp-list_type_search",
+  "resultsImage": ".serp-controller__content .serp-list_type_search .serp-item_type_search .serp-item__preview > a.serp-item__link"
+}

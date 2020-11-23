@@ -31,7 +31,8 @@
         "tensorflow": {
           "imageWidth": 28,
           "imageHeight": 28,
-          "imageChannels": 1
+          "imageChannels": 1,
+          "imageDownloadLimit": 100
         }
       },
       "import": null,

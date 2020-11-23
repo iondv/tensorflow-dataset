@@ -1,0 +1,7 @@
+{
+  "queryInput": "#sbtc > div > div > input",
+  "searchButton": "#sbtc > button",
+  "resultsContainer": "#islrg > div.islrc",
+  "resultsImage": "#islrg > div.islrc > div > a.islib",
+  "fullImageContainer": "#islsp > div > div > div > div > div > c-wiz"
+}
