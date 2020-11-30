@@ -366,7 +366,7 @@
       "selSorting": null,
       "selectionProvider": null,
       "formula": {
-        "div": [ 
+        "div": [
           {
             "sum": [
               "$objectPrediction",
@@ -387,6 +387,36 @@
       "unique": false,
       "autoassigned": false,
       "cached": true,
+      "indexSearch": false
+    },
+    {
+      "name": "isDefault",
+      "caption": "Is default?",
+      "type": 10,
+      "orderNumber": 100,
+      "mode": 0,
+      "size": null,
+      "decimals": 0,
+      "allowedFileTypes": "",
+      "maxFileCount": 0,
+      "hint": "",
+      "semantic": "",
+      "refClass": "",
+      "itemsClass": "",
+      "backRef": "",
+      "backColl": "",
+      "defaultValue": "false",
+      "binding": null,
+      "selConditions": [],
+      "selSorting": null,
+      "selectionProvider": null,
+      "formula": null,
+      "eagerLoading": false,
+      "readonly": false,
+      "indexed": true,
+      "nullable": false,
+      "unique": false,
+      "autoassigned": false,
       "indexSearch": false
     }
   ]

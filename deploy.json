@@ -200,6 +200,22 @@
           }
         }
       }
+    },
+    "rest": {
+      "globals": {
+        "authMode": {
+          "recognize": "none"
+        },
+        "di": {
+          "recognize": {
+            "module": "applications/tensorflow-dataset/services/recognize",
+            "options": {
+              "dataRepo": "ion://dataRepo",
+              "workflows": "ion://workflows"
+            }
+          }
+        }
+      }
     }
   }
 }

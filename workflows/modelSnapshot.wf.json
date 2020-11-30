@@ -1,0 +1,42 @@
+{
+  "name": "modelSnapshot",
+  "caption": "Snapshot to use by default",
+  "wfClass": "modelSnapshot",
+  "startState": "notDefault",
+  "states": [
+    {
+      "name": "notDefault",
+      "caption": "Not default snapshot",
+      "maxPeriod": "",
+      "conditions": [],
+      "itemPermissions": [],
+      "propertyPermissions": [],
+      "selectionProviders": []
+    },
+    {
+      "name": "default",
+      "caption": "Default snapshot",
+      "maxPeriod": "",
+      "conditions": [],
+      "itemPermissions": [],
+      "propertyPermissions": [],
+      "selectionProviders": []
+    }
+  ],
+  "transitions": [
+    {
+      "startState": "notDefault",
+      "finishState": "default",
+      "name": "makeDefault",
+      "caption": "Make default",
+      "signBefore": false,
+      "signAfter": false,
+      "confirm": false,
+      "confirmMessage": "",
+      "assignments": [],
+      "conditions": [
+      ],
+      "roles": []
+    }
+  ]
+}
