@@ -1,0 +1,15 @@
+{
+  "code": "computerVisionTasks",
+  "caption": "Computer vision tasks",
+  "type": 0,
+  "orderNumber": 30,
+  "title": "",
+  "hint": "",
+  "classname": "",
+  "container": "",
+  "collection": "",
+  "url": "",
+  "conditions": [],
+  "sorting": [],
+  "pathChains": []
+}

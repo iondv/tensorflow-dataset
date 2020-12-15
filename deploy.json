@@ -49,7 +49,7 @@
         "defaultPath": "tensorflow-dataset@object",
         "eagerLoading": {
           "*": {
-            "objectPrediction@tensorflow-dataset": {
+            "objectClassification@tensorflow-dataset": {
               "list": [
                 "leaningResult.modelFile.type"
               ]

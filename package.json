@@ -21,6 +21,7 @@
   "dependencies": {
     "@tensorflow/tfjs-node": "^2.4.0",
     "canvas": "^2.6.1",
-    "puppeteer": "^5.5.0"
+    "puppeteer": "^5.5.0",
+    "unzipper": "^0.10.11"
   }
 }

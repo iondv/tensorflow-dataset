@@ -6,7 +6,7 @@
   "prediction": 96.52208685874939,
   "object": "1c8b3c00-197f-11eb-b8d9-2dd9d903be49",
   "guid": "217ccc60-197f-11eb-b8d9-2dd9d903be49",
-  "_class": "objectPrediction@tensorflow-dataset",
+  "_class": "objectClassification@tensorflow-dataset",
   "_classVer": "",
   "_creator": "demo@local",
   "___workflowStatus": {}

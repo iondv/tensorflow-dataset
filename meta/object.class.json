@@ -334,7 +334,7 @@
       "indexSearch": false
     },
     {
-      "name": "objectPrediction",
+      "name": "objectClassification",
       "caption": "Object prediction",
       "type": 14,
       "orderNumber": 100,
@@ -346,7 +346,7 @@
       "hint": "",
       "semantic": "",
       "refClass": "",
-      "itemsClass": "objectPrediction",
+      "itemsClass": "objectClassification",
       "backRef": "",
       "backColl": "",
       "defaultValue": "",

@@ -22,7 +22,7 @@
   "type": null,
   "dataset": null,
   "guid": "b1edfdb0-197e-11eb-b8d9-2dd9d903be49",
-  "objectPrediction": [],
+  "objectClassification": [],
   "_class": "object@tensorflow-dataset",
   "_classVer": "",
   "_creator": "demo@local",

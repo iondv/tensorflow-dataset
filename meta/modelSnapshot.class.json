@@ -315,7 +315,7 @@
       "indexSearch": false
     },
     {
-      "name": "objectPrediction",
+      "name": "objectClassification",
       "caption": "object Predictions",
       "type": 14,
       "orderNumber": 90,
@@ -327,7 +327,7 @@
       "hint": "",
       "semantic": "",
       "refClass": "",
-      "itemsClass": "objectPrediction",
+      "itemsClass": "objectClassification",
       "backRef": "modelSnapshot",
       "backColl": "",
       "defaultValue": "",
@@ -369,13 +369,13 @@
         "div": [
           {
             "sum": [
-              "$objectPrediction",
+              "$objectClassification",
               "prediction"
             ]
           },
           {
             "count": [
-              "$objectPrediction"
+              "$objectClassification"
             ]
           }
         ]

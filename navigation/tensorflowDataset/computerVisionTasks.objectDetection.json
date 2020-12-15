@@ -1,0 +1,15 @@
+{
+  "code": "computerVisionTasks.objectDetection",
+  "caption": "Object detections (not implemented yet)",
+  "type": 1,
+  "orderNumber": 20,
+  "title": "",
+  "hint": "",
+  "classname": "objectDetection",
+  "container": "",
+  "collection": "",
+  "url": "",
+  "conditions": [],
+  "sorting": [],
+  "pathChains": []
+}

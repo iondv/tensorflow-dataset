@@ -55,7 +55,7 @@ function recognize(options) {
             resolve('default snapshot not set.');
           } else {
             const defaultSnapshot = defaultSnapshotList[0];
-            const newPredictionItem = await options.dataRepo.createItem(`objectPrediction@${ION_NAMESPACE}`, {
+            const newPredictionItem = await options.dataRepo.createItem(`objectClassification@${ION_NAMESPACE}`, {
               object: objectId,
               modelSnapshot: defaultSnapshot.id
             });

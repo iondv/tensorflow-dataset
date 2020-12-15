@@ -1,0 +1,15 @@
+{
+  "code": "import.datasets",
+  "caption": "Datasets",
+  "type": 1,
+  "orderNumber": 10,
+  "title": "",
+  "hint": "",
+  "classname": "dataset",
+  "container": "",
+  "collection": "",
+  "url": "",
+  "conditions": [],
+  "sorting": [],
+  "pathChains": []
+}

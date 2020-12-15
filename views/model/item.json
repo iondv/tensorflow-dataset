@@ -4,6 +4,27 @@
       "caption": "",
       "fullFields": [
         {
+          "property": "name",
+          "caption": "Name",
+          "type": 1,
+          "orderNumber": 10,
+          "hint": "",
+          "size": null,
+          "maskName": "",
+          "mask": "",
+          "mode": 0,
+          "commands": null,
+          "required": true,
+          "readonly": false,
+          "sorted": false,
+          "selectionPaginated": false,
+          "visibility": "",
+          "enablement": "",
+          "obligation": "",
+          "historyDisplayMode": 0,
+          "tags": ""
+        },
+        {
           "property": "type",
           "caption": "Type",
           "type": 1,
@@ -143,7 +164,7 @@
             {
               "sorted": true,
               "property": "sequential",
-              "caption": "Sequential",
+              "caption": "Order number",
               "type": 1,
               "orderNumber": 20,
               "hint": "",
@@ -179,6 +200,16 @@
               "visibilityCondition": null,
               "enableCondition": null,
               "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "DELETE",
+              "caption": "Delete",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": false,
               "signBefore": false,
               "signAfter": false,
               "isBulk": false

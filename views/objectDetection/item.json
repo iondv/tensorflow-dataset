@@ -4,10 +4,10 @@
       "caption": "",
       "fullFields": [
         {
-          "property": "modelSnapshot",
-          "caption": "Model snapshot",
-          "type": 5,
-          "orderNumber": 30,
+          "property": "detections",
+          "caption": "Detections",
+          "type": 3,
+          "orderNumber": 20,
           "hint": "",
           "size": null,
           "maskName": "",
@@ -24,6 +24,48 @@
               "signAfter": false,
               "isBulk": false
             },
+            {
+              "id": "EDIT",
+              "caption": "Edit",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": true,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            },
+            {
+              "id": "SELECT",
+              "caption": "Add",
+              "visibilityCondition": null,
+              "enableCondition": null,
+              "needSelectedItem": false,
+              "signBefore": false,
+              "signAfter": false,
+              "isBulk": false
+            }
+          ],
+          "required": false,
+          "readonly": false,
+          "sorted": false,
+          "selectionPaginated": false,
+          "visibility": "",
+          "enablement": "",
+          "obligation": "",
+          "historyDisplayMode": 0,
+          "tags": ""
+        },
+        {
+          "property": "modelSnapshot",
+          "caption": "Model snapshot",
+          "type": 2,
+          "orderNumber": 30,
+          "hint": "",
+          "size": null,
+          "maskName": "",
+          "mask": "",
+          "mode": 0,
+          "commands": [
             {
               "id": "EDIT",
               "caption": "Edit",
@@ -36,7 +78,7 @@
             }
           ],
           "required": true,
-          "readonly": false,
+          "readonly": true,
           "sorted": false,
           "selectionPaginated": false,
           "visibility": "",
@@ -46,39 +88,18 @@
           "tags": ""
         },
         {
-          "property": "type",
-          "caption": "Type",
-          "type": 5,
-          "orderNumber": 40,
+          "property": "log",
+          "caption": "Logs",
+          "type": 7,
+          "orderNumber": 50,
           "hint": "",
           "size": null,
           "maskName": "",
           "mask": "",
           "mode": 0,
-          "commands": [
-            {
-              "id": "CREATE",
-              "caption": "Create",
-              "visibilityCondition": null,
-              "enableCondition": null,
-              "needSelectedItem": false,
-              "signBefore": false,
-              "signAfter": false,
-              "isBulk": false
-            },
-            {
-              "id": "EDIT",
-              "caption": "Edit",
-              "visibilityCondition": null,
-              "enableCondition": null,
-              "needSelectedItem": true,
-              "signBefore": false,
-              "signAfter": false,
-              "isBulk": false
-            }
-          ],
+          "commands": null,
           "required": false,
-          "readonly": false,
+          "readonly": true,
           "sorted": false,
           "selectionPaginated": false,
           "visibility": "",
@@ -90,7 +111,7 @@
         {
           "property": "object",
           "caption": "Object",
-          "type": 5,
+          "type": 2,
           "orderNumber": 70,
           "hint": "",
           "size": null,
@@ -98,16 +119,6 @@
           "mask": "",
           "mode": 0,
           "commands": [
-            {
-              "id": "CREATE",
-              "caption": "Create",
-              "visibilityCondition": null,
-              "enableCondition": null,
-              "needSelectedItem": false,
-              "signBefore": false,
-              "signAfter": false,
-              "isBulk": false
-            },
             {
               "id": "EDIT",
               "caption": "Edit",
@@ -120,7 +131,7 @@
             }
           ],
           "required": false,
-          "readonly": false,
+          "readonly": true,
           "sorted": false,
           "selectionPaginated": false,
           "visibility": "",
@@ -136,7 +147,7 @@
   "commands": [
     {
       "id": "SAVE",
-      "caption": "Create",
+      "caption": "Save",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,
@@ -146,7 +157,17 @@
     },
     {
       "id": "SAVEANDCLOSE",
-      "caption": "Create and close",
+      "caption": "Save and close",
+      "visibilityCondition": null,
+      "enableCondition": null,
+      "needSelectedItem": false,
+      "signBefore": false,
+      "signAfter": false,
+      "isBulk": false
+    },
+    {
+      "id": "PROCESS_WITH_TENSORFLOW",
+      "caption": "Process with Tensorflow",
       "visibilityCondition": null,
       "enableCondition": null,
       "needSelectedItem": false,

@@ -237,7 +237,7 @@
           "tags": ""
         },
         {
-          "property": "objectPrediction",
+          "property": "objectClassification",
           "caption": "Objects prediction",
           "type": 3,
           "orderNumber": 80,
