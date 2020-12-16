@@ -1,0 +1,15 @@
+{
+  "code": "import.bulkImageUpload",
+  "caption": "Images in bulk",
+  "type": 1,
+  "orderNumber": 30,
+  "title": "",
+  "hint": "",
+  "classname": "bulkImageUpload",
+  "container": "",
+  "collection": "",
+  "url": "",
+  "conditions": [],
+  "sorting": [],
+  "pathChains": []
+}

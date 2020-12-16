@@ -1,0 +1,42 @@
+{
+  "name": "bulkImageUpload",
+  "caption": "Image upload in bulk",
+  "wfClass": "bulkImageUpload",
+  "startState": "created",
+  "states": [
+    {
+      "name": "created",
+      "caption": "Created",
+      "maxPeriod": "",
+      "conditions": [],
+      "itemPermissions": [],
+      "propertyPermissions": [],
+      "selectionProviders": []
+    },
+    {
+      "name": "uploaded",
+      "caption": "Uploaded",
+      "maxPeriod": "",
+      "conditions": [],
+      "itemPermissions": [],
+      "propertyPermissions": [],
+      "selectionProviders": []
+    }
+  ],
+  "transitions": [
+    {
+      "startState": "created",
+      "finishState": "uploaded",
+      "name": "upload",
+      "caption": "Upload",
+      "signBefore": false,
+      "signAfter": false,
+      "confirm": false,
+      "confirmMessage": "",
+      "assignments": [],
+      "conditions": [
+      ],
+      "roles": []
+    }
+  ]
+}

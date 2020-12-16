@@ -418,6 +418,36 @@
       "unique": false,
       "autoassigned": false,
       "indexSearch": false
+    },
+    {
+      "name": "trainingOptions",
+      "caption": "Training options",
+      "type": 13,
+      "orderNumber": 110,
+      "mode": 0,
+      "size": null,
+      "decimals": 0,
+      "allowedFileTypes": "",
+      "maxFileCount": 0,
+      "hint": "",
+      "semantic": "",
+      "refClass": "trainingOptions",
+      "itemsClass": "",
+      "backRef": "",
+      "backColl": "",
+      "defaultValue": "",
+      "binding": null,
+      "selConditions": [],
+      "selSorting": null,
+      "selectionProvider": null,
+      "formula": null,
+      "eagerLoading": false,
+      "readonly": false,
+      "indexed": true,
+      "nullable": false,
+      "unique": false,
+      "autoassigned": false,
+      "indexSearch": false
     }
   ]
 }

@@ -1,0 +1,78 @@
+{
+  "columns": [
+    {
+      "property": "name",
+      "caption": "Name",
+      "type": 1,
+      "orderNumber": 10,
+      "hint": "",
+      "size": null,
+      "maskName": "",
+      "mask": "",
+      "mode": 0,
+      "commands": null,
+      "required": false,
+      "readonly": false,
+      "sorted": true,
+      "selectionPaginated": false,
+      "visibility": "",
+      "enablement": "",
+      "obligation": "",
+      "historyDisplayMode": 0,
+      "tags": ""
+    },
+    {
+      "property": "defaultState",
+      "caption": "Default state",
+      "type": 1,
+      "orderNumber": 20,
+      "hint": "",
+      "size": null,
+      "maskName": "",
+      "mask": "",
+      "mode": 0,
+      "commands": null,
+      "required": false,
+      "readonly": false,
+      "sorted": true,
+      "selectionPaginated": false,
+      "visibility": "",
+      "enablement": "",
+      "obligation": "",
+      "historyDisplayMode": 0,
+      "tags": ""
+    }
+  ],
+  "commands": [
+    {
+      "id": "CREATE",
+      "caption": "Create",
+      "visibilityCondition": null,
+      "enableCondition": null,
+      "needSelectedItem": false,
+      "signBefore": false,
+      "signAfter": false,
+      "isBulk": false
+    },
+    {
+      "id": "EDIT",
+      "caption": "Edit",
+      "visibilityCondition": null,
+      "enableCondition": null,
+      "needSelectedItem": true,
+      "signBefore": false,
+      "signAfter": false,
+      "isBulk": false
+    },
+    {
+      "id": "DELETE",
+      "caption": "Delete",
+      "visibilityCondition": null,
+      "enableCondition": null,
+      "needSelectedItem": true,
+      "signBefore": false,
+      "signAfter": false,
+      "isBulk": false
+    }
+  ]
+}
