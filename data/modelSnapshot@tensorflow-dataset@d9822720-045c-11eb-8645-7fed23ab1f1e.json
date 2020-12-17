@@ -3,8 +3,8 @@
   "_class": "modelSnapshot@tensorflow-dataset",
   "_classVer": "",
   "creationDate": "2020-10-02T03:08:00.000Z",
-  "dateEditing": "2020-10-02T03:08:00.000Z",
-  "isDefault": "false",
+  "dateEditing": "2020-12-17T01:59:29.967Z",
+  "isDefault": false,
   "logs": "",
   "model": "97706540-045c-11eb-8645-7fed23ab1f1e",
   "modelFile": "",
@@ -21,8 +21,11 @@
     "T-shirt",
     "Trouser"
   ],
+  "_editor": "demo@local",
+  "trainingOptions": "2389ad80-3f49-11eb-a784-bf11b1cd3440",
+  "predictionCalc": null,
   "___workflowStatus": {
-    "modelSnapshot@tensorflow-dataset": {
+    "defaultSnapshot@tensorflow-dataset": {
       "next": {
         "makeDefault": {
           "name": "makeDefault",
@@ -36,6 +39,21 @@
       "workflowCaption": "Snapshot to use by default",
       "stageCaption": "Not default snapshot",
       "stage": "notDefault"
+    },
+    "modelTraining@tensorflow-dataset": {
+      "next": {
+        "train": {
+          "name": "train",
+          "caption": "Train",
+          "signBefore": false,
+          "signAfter": false,
+          "confirm": false,
+          "confirmMessage": ""
+        }
+      },
+      "workflowCaption": "Train model",
+      "stageCaption": "Model is ready for training",
+      "stage": "ready"
     }
   }
 }

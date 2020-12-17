@@ -134,8 +134,8 @@
               "log": "ion://sysLog"
             }
           },
-          "teachModel": {
-            "module": "applications/tensorflow-dataset/lib/util/teachModel",
+          "trainModel": {
+            "module": "applications/tensorflow-dataset/lib/util/trainModel",
             "initMethod": "init",
             "initLevel": 2,
             "options": {
@@ -167,7 +167,7 @@
                 },
                 {
                   "code": "TEACH_MODEL",
-                  "handler": "ion://teachModel"
+                  "handler": "ion://trainModel"
                 },
                 {
                   "code": "IMPORT_FROM_DATASET",

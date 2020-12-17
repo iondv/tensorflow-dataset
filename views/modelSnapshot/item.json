@@ -388,16 +388,6 @@
       "signBefore": false,
       "signAfter": false,
       "isBulk": false
-    },
-    {
-      "id": "TEACH_MODEL",
-      "caption": "Teach",
-      "visibilityCondition": null,
-      "enableCondition": null,
-      "needSelectedItem": false,
-      "signBefore": false,
-      "signAfter": false,
-      "isBulk": false
     }
   ]
 }

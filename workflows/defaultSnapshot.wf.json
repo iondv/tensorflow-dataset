@@ -1,5 +1,5 @@
 {
-  "name": "modelSnapshot",
+  "name": "defaultSnapshot",
   "caption": "Snapshot to use by default",
   "wfClass": "modelSnapshot",
   "startState": "notDefault",

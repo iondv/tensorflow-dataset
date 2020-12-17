@@ -1,0 +1,65 @@
+{
+  "name": "modelTraining",
+  "caption": "Train model",
+  "wfClass": "modelSnapshot",
+  "startState": "ready",
+  "states": [
+    {
+      "name": "ready",
+      "caption": "Model is ready for training",
+      "maxPeriod": "",
+      "conditions": [],
+      "itemPermissions": [],
+      "propertyPermissions": [],
+      "selectionProviders": []
+    },
+    {
+      "name": "training",
+      "caption": "Model is currently in training",
+      "maxPeriod": "",
+      "conditions": [],
+      "itemPermissions": [],
+      "propertyPermissions": [],
+      "selectionProviders": []
+    },
+    {
+      "name": "stopping",
+      "caption": "Model is requested to stop training",
+      "maxPeriod": "",
+      "conditions": [],
+      "itemPermissions": [],
+      "propertyPermissions": [],
+      "selectionProviders": []
+    }
+  ],
+  "transitions": [
+    {
+      "startState": "ready",
+      "finishState": "training",
+      "name": "train",
+      "caption": "Train",
+      "signBefore": false,
+      "signAfter": false,
+      "confirm": false,
+      "confirmMessage": "",
+      "assignments": [],
+      "conditions": [
+      ],
+      "roles": []
+    },
+    {
+      "startState": "training",
+      "finishState": "stopping",
+      "name": "stop",
+      "caption": "Stop training",
+      "signBefore": false,
+      "signAfter": false,
+      "confirm": false,
+      "confirmMessage": "",
+      "assignments": [],
+      "conditions": [
+      ],
+      "roles": []
+    }
+  ]
+}
