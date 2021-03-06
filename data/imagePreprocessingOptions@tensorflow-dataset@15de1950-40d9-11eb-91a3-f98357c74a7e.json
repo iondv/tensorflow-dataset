@@ -1,0 +1,11 @@
+{
+  "colorChannels": 1,
+  "imageWidth": 28,
+  "imageHeight": 28,
+  "invert": true,
+  "guid": "15de1950-40d9-11eb-91a3-f98357c74a7e",
+  "_class": "imagePreprocessingOptions@tensorflow-dataset",
+  "_classVer": "",
+  "_creator": "demo@local",
+  "___workflowStatus": {}
+}

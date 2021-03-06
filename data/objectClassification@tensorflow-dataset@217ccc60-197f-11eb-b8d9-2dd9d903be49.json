@@ -1,13 +1,11 @@
 {
-  "recognizedType": "Coat",
-  "modelSnapshot": "82483390-1975-11eb-8617-834a23d06415",
-  "type": null,
-  "log": "Loading model...\nRunning prediction...\nprediction: Coat (96%)\nT-shirt: 0.0076\nTrouser: 0.0016\nPullover: 0.0015\nDress: 0.0011\nCoat: 0.9652\nSandal: 0\nShirt: 0.0206\nSneaker: 0\nBag: 0.0024\nAnkle boot: 0\n",
-  "prediction": 96.52208685874939,
-  "object": "1c8b3c00-197f-11eb-b8d9-2dd9d903be49",
   "guid": "217ccc60-197f-11eb-b8d9-2dd9d903be49",
   "_class": "objectClassification@tensorflow-dataset",
   "_classVer": "",
-  "_creator": "demo@local",
+  "log": "Loading model...\nRunning prediction...\nprediction: Coat (96%)\nT-shirt: 0.0076\nTrouser: 0.0016\nPullover: 0.0015\nDress: 0.0011\nCoat: 0.9652\nSandal: 0\nShirt: 0.0206\nSneaker: 0\nBag: 0.0024\nAnkle boot: 0\n",
+  "modelSnapshot": "82483390-1975-11eb-8617-834a23d06415",
+  "object": "1c8b3c00-197f-11eb-b8d9-2dd9d903be49",
+  "prediction": 96.52208685874939,
+  "recognizedType": "Coat",
   "___workflowStatus": {}
 }

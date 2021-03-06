@@ -1,14 +1,11 @@
 {
-  "recognizedType": "Sandal",
-  "modelSnapshot": "82483390-1975-11eb-8617-834a23d06415",
-  "type": null,
-  "log": "Loading model...\nRunning prediction...\nprediction: Sandal (55%)\nT-shirt: 0.0088\nTrouser: 0\nPullover: 0.0059\nDress: 0.0005\nCoat: 0.0003\nSandal: 0.553\nShirt: 0.0086\nSneaker: 0.0231\nBag: 0.3998\nAnkle boot: 0\n",
-  "prediction": 55.30484318733215,
-  "object": "9a21e400-1981-11eb-b8d9-2dd9d903be49",
   "guid": "6c34c230-197f-11eb-b8d9-2dd9d903be49",
   "_class": "objectClassification@tensorflow-dataset",
   "_classVer": "",
-  "_creator": "demo@local",
-  "_editor": "demo@local",
+  "log": "Loading model...\nRunning prediction...\nprediction: Sandal (55%)\nT-shirt: 0.0088\nTrouser: 0\nPullover: 0.0059\nDress: 0.0005\nCoat: 0.0003\nSandal: 0.553\nShirt: 0.0086\nSneaker: 0.0231\nBag: 0.3998\nAnkle boot: 0\n",
+  "modelSnapshot": "82483390-1975-11eb-8617-834a23d06415",
+  "object": "9a21e400-1981-11eb-b8d9-2dd9d903be49",
+  "prediction": 55.30484318733215,
+  "recognizedType": "Sandal",
   "___workflowStatus": {}
 }

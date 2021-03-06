@@ -1,10 +1,8 @@
 {
-  "epochs": 10,
-  "batchSize": 50,
   "guid": "2389ad80-3f49-11eb-a784-bf11b1cd3440",
   "_class": "trainingOptions@tensorflow-dataset",
   "_classVer": "",
-  "_creator": "demo@local",
-  "_editor": "demo@local",
+  "batchSize": 50,
+  "epochs": 10,
   "___workflowStatus": {}
 }

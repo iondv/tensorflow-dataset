@@ -65,6 +65,27 @@
           "obligation": "",
           "historyDisplayMode": 0,
           "tags": ""
+        },
+        {
+          "property": "invert",
+          "caption": "Invert",
+          "type": 4,
+          "orderNumber": 40,
+          "hint": "",
+          "size": null,
+          "maskName": "",
+          "mask": "",
+          "mode": 0,
+          "commands": [],
+          "required": false,
+          "readonly": false,
+          "sorted": false,
+          "selectionPaginated": false,
+          "visibility": "",
+          "enablement": "",
+          "obligation": "",
+          "historyDisplayMode": 0,
+          "tags": ""
         }
       ],
       "shortFields": []
