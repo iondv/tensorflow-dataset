@@ -1,0 +1,404 @@
+{
+  "log_level": "notice",
+  "parametrised": true,
+  "baseUrl": "[[app.baseUrl]]",
+  "port": "[[server.ports]]",
+  "lang": "[[app.lang]]",
+  "defaultModule":"[[module.default]]",
+  "skipModules": "[[module.skip]]",
+  "requestSizeLimit": "[[server.requestSizeLimit]]",
+  "theme": "[[ui.theme]]",
+  "content":{
+    "serverRendering": false,
+    "homeRedirect": "/registry"
+  },
+  "log": {
+    "logDestinations": ["console", "./log"]
+  },
+  "runJobs": "[[jobs.enabled]]",
+  "bootstrap": {
+  },
+  "di" : {
+    "dataSources": {
+      "module": "@iondv/db/lib/datasources",
+      "initMethod": "connect",
+      "initLevel": 0,
+      "options": {
+        "logger": "ion://sysLog",
+        "runtimeEvents": "ion://rtEvents",
+        "sources": [
+          {
+            "name":"Db",
+            "module":"@iondv/db/lib/datasource/mongodb",
+            "options": {
+              "logger": "ion://sysLog",
+              "uri": "[[db.uri]]",
+              "url": {
+                "hosts": "[[db.hosts]]",
+                "user": "[[db.user]]",
+                "pwd": "[[db.pwd]]",
+                "db": "[[db.dbname]]",
+                "params": {
+                  "authMechanism": "[[db.authMechanism]]"
+                }
+              },
+              "options": {
+                "keepAlive": 1,
+                "connectTimeoutMS": "[[db.connectTimeOut]]",
+                "socketTimeoutMS": "[[db.operTimeOut]]",
+                "poolSize": "[[db.poolSize]]",
+                "sslValidate": "[[db.sslValidate]]",
+                "checkServerIntegrity": "[[db.checkServerIntegrity]]",
+                "sslCA": "[[db.sslCA]]",
+                "sslCert": "[[db.sslCert]]",
+                "sslKey": "[[db.sslKey]]",
+                "sslPass": "[[db.sslPass]]",
+                "replicaSet": "[[db.replicaSet]]",
+                "authSource": "[[db.authSource]]",
+                "ssl": "[[db.ssl]]"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "sequenceProvider": {
+      "module": "@iondv/db/lib/datasource/MongoSequenceProvider",
+      "options": {
+        "dataSource": "ion://Db"
+      }
+    },
+    "aclProvider":{
+      "module": "@iondv/acl/access/DsAcl",
+      "initMethod": "init",
+      "initLevel": 1,
+      "options":{
+        "log": "ion://sysLog",
+        "dataSource": "ion://Db"
+      }
+    },
+    "roleAccessManager": {
+      "module": "@iondv/acl/access/DsRoleAccessManager",
+      "options": {
+        "dataSource": "ion://Db",
+        "accounts": "ion://accounts",
+        "eventLogger": "ion://accessLogger"
+      }
+    },
+    "accessLogger": {
+      "module": "@iondv/acl/access/DsRoleAccessChangeLogger",
+      "options": {
+        "table": "ion_accesslog",
+        "dataSource": "ion://Db"
+      }
+    },
+    "accounts": {
+      "module": "@iondv/accounts/lib/LocalAccountStorage",
+      "initMethod": "init",
+      "options": {
+        "dataSource": "ion://Db"
+      }
+    },
+    "notifier": {
+      "module": "@iondv/commons/lib/notifications/Notifier",
+      "options": {
+        "dataSource": "ion://Db",
+        "accounts": "ion://accounts",
+        "log": "ion://sysLog"
+      }
+    },
+    "sessionHandler": {
+      "module": "@iondv/web/lib/session",
+      "initMethod": "init",
+      "initLevel": 1,
+      "options": {
+        "app": "ion://application",
+        "log": "ion://sysLog",
+        "storage": {
+          "type": "db",
+          "dataSource": "ion://Db"
+        },
+        "session": {
+          "secret": "ion:demo:secret",
+          "resave": false,
+          "saveUninitialized": true,
+          "cookie": {
+            "httpOnly": true,
+            "secure": false,
+            "maxAge": "[[auth.sessionLifeTime]]"
+          }
+        }
+      }
+    },
+    "auth": {
+      "module": "@iondv/auth",
+      "initMethod": "init",
+      "initLevel": 2,
+      "options": {
+        "app": "ion://application",
+        "logger": "ion://sysLog",
+        "accounts": "ion://accounts",
+        "dataSource": "ion://Db",
+        "denyTopLevel": "[[auth.denyTop]]",
+        "authCallbacks": ["[[auth.callback]]"],
+        "publicRegistration": "[[auth.registration]]",
+        "exclude": "[[auth.exclude]]",
+        "acl": "ion://aclProvider",
+        "inactiveTimeout": "[[auth.inactivityTimeout]]",
+        "passwordLifetime": "[[auth.passwordLifeTime]]",
+        "passwordMinPeriod": "[[auth.passwordMinPeriod]]",
+        "passwordMinLength": "[[auth.passwordMinLength]]",
+        "passwordJournalSize": "[[auth.passwordJournalSize]]",
+        "passwordComplexity": {
+          "upperLower": "[[auth.passwordComplexity.upperLower]]",
+          "number": "[[auth.passwordComplexity.number]]",
+          "special": "[[auth.passwordComplexity.special]]"
+        },
+        "attemptTimeOut": "[[auth.attemptTimeOut]]",
+        "attemptLimit": "[[auth.attemptLimit]]",
+        "tempBlockPeriod": "[[auth.tempBlockPeriod]]",
+        "tempBlockLimit": "[[auth.tempBlockLimit]]",
+        "tempBlockInterval": "[[auth.tempBlockInterval]]",
+        "blockPeriod": "[[auth.blockPeriod]]",
+        "checkSignInAccess": "[[auth.checkSignInAccess]]",
+        "checkUrlAccess": "[[auth.checkUrlAccess]]",
+        "goHome": "[[auth.goHome]]",
+        "passports":[],
+        "eventLogger": "ion://authLogger"
+      }
+    },
+    "authLogger": {
+      "module": "@iondv/commons/lib/changelogger/EventLogger",
+      "options": {
+        "table": "ion_authlog",
+        "dataSource": "ion://Db",
+        "types": {
+          "LOGIN": "LOGIN",
+          "LOGOUT": "LOGOUT",
+          "FAILURE": "FAILURE",
+          "CHANGE_PASSWORD": "CHANGE_PASSWORD",
+          "REGISTER": "REGISTER",
+          "EDIT_PROFILE": "EDIT_PROFILE"
+        }
+      }
+    },
+    "calculator": {
+      "module": "@iondv/meta-model/lib/Calculator",
+      "options": {
+        "dataRepo": "lazy://dataRepo",
+        "sequenceProvider": "ion://sequenceProvider"
+      }
+    },
+    "metaRepo": {
+      "module": "@iondv/meta-model/lib/meta/DsMetaRepository",
+      "initMethod": "init",
+      "initLevel": 1,
+      "options": {
+        "dataSource": "ion://Db",
+        "calc": "ion://calculator",
+        "sync": {
+          "name": "dbSync",
+          "module": "@iondv/meta-model/lib/meta/mongo/dbSync",
+          "options": {
+            "dataSource": "ion://Db",
+            "log": "ion://sysLog"
+          }
+        },
+        "log": "ion://sysLog"
+      }
+    },
+    "fileStorage": {
+      "module": "@iondv/commons/lib/resource/FsStorage",
+      "initMethod":"init",
+      "initLevel": 3,
+      "options": {
+        "storageBase": "[[fs.storageRoot]]",
+        "urlBase": "[[fs.urlBase]]",
+        "shareBase": "[[fs.shareBase]]",
+        "dataSource": "ion://Db",
+        "app": "ion://application",
+        "auth": "lazy://auth"
+      }
+    },
+    "imageStorage": {
+      "module": "@iondv/commons/lib/resource/ImageStorage",
+      "initMethod": "init",
+      "initLevel": 3,
+      "options": {
+        "log": "ion://sysLog",
+        "fileStorage": "ion://fileStorage",
+        "urlBase": "/images",
+        "app": "ion://application",
+        "auth": "lazy://auth",
+        "thumbsDirectoryMode": "[[fs.thumbDirMode]]",
+        "thumbsDirectory": "[[fs.thumbDir]]",
+        "thumbnails": {
+          "tiny": {
+            "width": 50,
+            "height": 50
+          },
+          "small": {
+            "width": 100,
+            "height": 100
+          },
+          "medium": {
+            "width": 300,
+            "height": 300
+          },
+          "preview": {
+            "width": 500,
+            "height": 500
+          }
+        }
+      }
+    },
+    "keyProvider": {
+      "module": "@iondv/meta-model/lib/meta/keyProvider",
+      "options": {
+        "metaRepo": "ion://metaRepo",
+        "keySeparator": "[[data.keySeparator]]"
+      }
+    },
+    "dataRepo": {
+      "module": "@iondv/meta-model/lib/datarepository/ionDataRepository",
+      "options": {
+        "dataSource": "ion://Db",
+        "metaRepository": "ion://metaRepo",
+        "fileStorage": "ion://fileStorage",
+        "imageStorage": "ion://imageStorage",
+        "log": "ion://sysLog",
+        "keyProvider": "ion://keyProvider"
+      }
+    },
+    "innerCache": {
+      "module": "@iondv/commons/lib/cache/InnerCacheRepository",
+      "options": {}
+    },
+    "memcached": {
+      "module": "@iondv/commons/lib/cache/MemcachedRepository",
+      "initMethod": "init",
+      "initLevel": 1,
+      "options": {
+        "enabled": "[[cache.memcached.enabled]]",
+        "serverLocations": "[[cache.memcached.locations]]",
+        "connectOptions": {
+          "maxKeySize": "[[cache.memcached.maxKeySize]]",
+          "maxExpiration": "[[cache.memcached.maxExpiration]]",
+          "maxValue": "[[cache.memcached.maxValue]]",
+          "poolSize": "[[cache.memcached.poolSize]]",
+          "algorithm": "[[cache.memcached.algorithm]]",
+          "reconnect": "[[cache.memcached.reconnect]]",
+          "retries": "[[cache.memcached.retries]]",
+          "failures": "[[cache.memcached.failures]]",
+          "retry": "[[cache.memcached.retry]]",
+          "remove": "[[cache.memcached.remove]]",
+          "keyCompression": "[[cache.memcached.keyCompression]]",
+          "idle": "[[cache.memcached.idle]]",
+          "timeout": "[[cache.memcached.timeout]]"
+        },
+        "lifetime": "[[cache.memcached.lifetime]]",
+        "reconnectTimeout": "[[cache.memcached.reconnectTimeout]]",
+        "logger": "ion://sysLog"
+      }
+    },
+    "redis": {
+      "module": "@iondv/commons/lib/cache/RedisRepository",
+      "initMethod": "init",
+      "initLevel": 1,
+      "options": {
+        "enabled": "[[cache.redis.enabled]]",
+        "host": "[[cache.redis.host]]",
+        "port": "[[cache.redis.port]]",
+        "connectOptions": {
+          "path": "[[cache.redis.path]]",
+          "url": "[[cache.redis.url]]",
+          "string_numbers": "[[cache.redis.string_numbers]]",
+          "return_buffers": "[[cache.redis.return_buffers]]",
+          "detect_buffers": "[[cache.redis.detect_buffers]]",
+          "socket_keepalive": "[[cache.redis.socket_keepalive]]",
+          "no_ready_check": "[[cache.redis.no_ready_check]]",
+          "enable_offline_queue": "[[cache.redis.enable_offline_queue]]",
+          "retry_unfulfilled_commands": "[[cache.redis.retry_unfulfilled_commands]]",
+          "password": "[[cache.redis.password]]",
+          "db": "[[cache.redis.db]]",
+          "family": "[[cache.redis.family]]",
+          "disable_resubscribing": "[[cache.redis.disable_resubscribing]]",
+          "rename_commands": "[[cache.redis.rename_commands]]",
+          "tls": "[[cache.redis.tls]]",
+          "prefix": "[[cache.redis.prefix]]",
+          "retry_strategy": {}
+        },
+        "logger": "ion://sysLog"
+      }
+    },
+    "wsAuth": {
+      "module": "@iondv/web/lib/wsAuth",
+      "options": {
+        "dataSource": "ion://Db",
+        "auth": "ion://auth",
+        "acl": "ion://aclProvider"
+      }
+    },
+    "workflows": {
+      "module": "@iondv/meta-model/lib/meta/WorkflowProvider",
+      "initMethod": "init",
+      "initLevel": 1,
+      "options": {
+        "dataSource": "ion://Db",
+        "metaRepo": "ion://metaRepo",
+        "dataRepo": "ion://dataRepo",
+        "calc": "lazy://calculator"
+      }
+    },
+    "queryParser": {
+      "module": "@iondv/commons/lib/QueryParser",
+      "options": {}
+    },
+    "cachedDataRepo": {
+      "module": "@iondv/meta-model/lib/datarepository/CachedDataRepository",
+      "options": {
+        "data": "ion://dataRepo",
+        "cache": "ion://[[cache.module]]",
+        "fileStorage": "ion://fileStorage",
+        "imageStorage": "ion://imageStorage"
+      }
+    },
+    "securedDataRepo": {
+      "module": "@iondv/meta-model/lib/datarepository/SecuredDataRepository",
+      "initMethod": "init",
+      "initLevel": 2,
+      "options": {
+        "data": "ion://cachedDataRepo",
+        "meta": "ion://metaRepo",
+        "acl": "ion://aclProvider",
+        "keyProvider": "ion://keyProvider",
+        "workflow": "ion://workflows",
+        "log": "ion://sysLog",
+        "calc": "lazy://calculator",
+        "resourcePortionSize": 50000
+      }
+    },
+    "background": {
+      "module": "@iondv/commons/lib/Background",
+      "options": {
+        "dataSource": "ion://Db",
+        "log": "ion://sysLog"
+      }
+    },
+    "kvRepo": {
+      "module": "@iondv/commons/lib/cache/DsCacheRepository",
+      "options": {
+        "dataSource": "ion://Db",
+        "name": "tmp_store"
+      }
+    },
+    "scheduler": {
+      "module": "@iondv/commons/lib/Scheduler",
+      "options": {
+        "settings": "ion://settings",
+        "repo": "ion://kvRepo",
+        "log": "ion://sysLog"
+      }
+    }
+  }
+}

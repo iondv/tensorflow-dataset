@@ -1,0 +1,10 @@
+users:
+  - id: demo
+    name: demo
+    needPwdReset: false
+    pwd:
+      hash: >-
+        pbkdf2$10000$dcbf5575be124057716018724690389328f1013c1a70cf8315e9be8c6da6c043dd6489b81f2be86e81dc9302f6acab8dc9b315d8bee500c048f9c0cb710a5c31$9e9270fc11c26cbe2b28841ca473acdc38ea3c7c799154fe41fdf168d431412153c3cba4ae013fc278e870735d7e322f23d2dd5242b36bdc0622b0607efa59d4
+    type: local
+    roles:
+      - admin

@@ -1,6 +1,6 @@
 'use strict';
 
-let Base = require('modules/dashboard/base-widget');
+let Base = require('@iondv/dashboard/base-widget');
 
 module.exports = class Widget extends Base {
 

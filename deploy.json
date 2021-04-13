@@ -11,7 +11,7 @@
     "explicitTopMenu": [],
     "plugins": {
       "workflowEvents" : {
-        "module": "applications/tensorflow-dataset/lib/util/workflowEvents.js",
+        "module": "./lib/util/workflowEvents.js",
         "initMethod": "init",
         "initLevel": 1,
         "options": {
@@ -61,38 +61,38 @@
         "statics": null,
         "di": {
           "itemToExcel": {
-            "module": "modules/registry/export/itemToExcel",
+            "module": "@iondv/registry/export/itemToExcel",
             "initMethod": "init",
             "initLevel": 0,
             "options": {
-              "tplDir": "applications/tensorflow-dataset/export/item",
+              "tplDir": "./export/item",
               "injectors": []
             }
           },
           "itemToDocx": {
-            "module": "modules/registry/export/itemToDocx",
+            "module": "@iondv/registry/export/itemToDocx",
             "initMethod": "init",
             "initLevel": 0,
             "options": {
-              "tplDir": "applications/tensorflow-dataset/export/item",
+              "tplDir": "./export/item",
               "injectors": []
             }
           },
           "listToDocx": {
-            "module": "modules/registry/export/listToDocx",
+            "module": "@iondv/registry/export/listToDocx",
             "initMethod": "init",
             "initLevel": 0,
             "options": {
-              "tplDir": "applications/tensorflow-dataset/export/list",
+              "tplDir": "./export/list",
               "log": "ion://sysLog"
             }
           },
           "listToExcel": {
-            "module": "modules/registry/export/listToExcel",
+            "module": "@iondv/registry/export/listToExcel",
             "initMethod": "init",
             "initLevel": 0,
             "options": {
-              "tplDir": "applications/tensorflow-dataset/export/list",
+              "tplDir": "./export/list",
               "log": "ion://sysLog"
             }
           },
@@ -115,7 +115,7 @@
             }
           },
           "processWithTensorflow": {
-            "module": "applications/tensorflow-dataset/lib/util/processWithTensorflow",
+            "module": "./lib/util/processWithTensorflow",
             "initMethod": "init",
             "initLevel": 2,
             "options": {
@@ -125,7 +125,7 @@
             }
           },
           "compileModel": {
-            "module": "applications/tensorflow-dataset/lib/util/compileModel",
+            "module": "./lib/util/compileModel",
             "initMethod": "init",
             "initLevel": 2,
             "options": {
@@ -135,7 +135,7 @@
             }
           },
           "teachModel": {
-            "module": "applications/tensorflow-dataset/lib/util/teachModel",
+            "module": "./lib/util/teachModel",
             "initMethod": "init",
             "initLevel": 2,
             "options": {
@@ -145,7 +145,7 @@
             }
           },
           "importFromDataset": {
-            "module": "applications/tensorflow-dataset/lib/util/importFromDataset",
+            "module": "./lib/util/importFromDataset",
             "initMethod": "init",
             "initLevel": 2,
             "options": {
@@ -192,7 +192,7 @@
           "tensorflow-dataset": "Tensorflow dataset"
         },
         "root": {
-          "tensorflow-dataset": "applications/tensorflow-dataset/dashboard"
+          "tensorflow-dataset": "./dashboard"
         },
         "layouts": {
           "task": {
@@ -208,7 +208,7 @@
         },
         "di": {
           "recognize": {
-            "module": "applications/tensorflow-dataset/services/recognize",
+            "module": "./services/recognize",
             "options": {
               "dataRepo": "ion://dataRepo",
               "workflows": "ion://workflows"

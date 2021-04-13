@@ -3,23 +3,32 @@
   "description": "",
   "license": "Apache License 2.0",
   "version": "0.0.1",
-  "ionModulesDependencies": {
-    "ionadmin": "*",
-    "registry": "*",
-    "dashboard": "*",
-    "aib": "*",
-    "rest": "*"
-  },
-  "ionMetaDependencies": {
-    "viewlib": "0.12.4"
-  },
   "changeState": {
     "major": true,
     "minor": true,
     "patch": true
   },
+  "scripts": {
+    "www": "./node_modules/.bin/www",
+    "acl": "./node_modules/.bin/acl --d",
+    "import-data": "./node_modules/.bin/import-data",
+    "import-meta": "./node_modules/.bin/import --ns tensorflow-dataset"
+  },
   "dependencies": {
     "@tensorflow/tfjs-node": "^2.4.0",
+    "@iondv/ionadmin": "iondv/ionadmin#v2",
+    "@iondv/registry": "iondv/registry#v2",
+    "@iondv/dashboard": "iondv/dashboard#v2",
+    "@iondv/rest": "iondv/rest#v2",
+    "@iondv/viewlib": "iondv/viewlib#v2",
+    "@iondv/accounts": "iondv/accounts#main",
+    "@iondv/acl": "iondv/acl#main",
+    "@iondv/auth": "iondv/auth#main",
+    "@iondv/core": "iondv/core#main",
+    "@iondv/commons": "iondv/commons#main",
+    "@iondv/db": "iondv/db#main",
+    "@iondv/meta-model": "iondv/meta-model#main",
+    "@iondv/web": "iondv/web#main",
     "canvas": "^2.6.1",
     "puppeteer": "^5.5.0"
   }

@@ -1,4 +1,4 @@
-const Service = require('modules/rest/lib/interfaces/Service');
+const Service = require('@iondv/rest/lib/interfaces/Service');
 const crypto = require('crypto');
 
 const processWithTensorflow = require('../lib/util/processWithTensorflow');

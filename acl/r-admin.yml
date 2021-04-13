@@ -1,0 +1,6 @@
+roles:
+  - id: admin
+    name: admin
+    permissions:
+      '*':
+        - full
